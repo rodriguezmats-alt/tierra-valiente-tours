@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Newsletter de Tierra Valiente Tours con aventuras únicas en Guatemala.">
+  <title>Tierra Valiente Tours - Newsletter</title>
+  <style>
+    :root {
+      --deep: #061b22;
+      --forest: #123d3a;
+      --orange: #913727;
+      --cyan: #8ee4d5;
+      --paper: #f8fbf8;
+      --ink: #102b2b;
+      --muted: #4d6865;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #dfece6;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 28px 16px;
+    }
+
+    .container {
+      background: var(--paper);
+      border: 1px solid rgba(18, 61, 58, 0.15);
+      border-radius: 18px;
+      box-shadow: 0 24px 60px rgba(6, 27, 34, 0.14);
+      margin: auto;
+      max-width: 680px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(6, 27, 34, 0.95), rgba(18, 61, 58, 0.9)), url("../../assets/propias/placeholder.svg") center / cover;
+      color: #fff;
+      padding: 56px 34px;
+      position: relative;
+      text-align: center;
+    }
+
+    header::after {
+      border: 1px solid rgba(142, 228, 213, 0.45);
+      border-radius: 50%;
+      content: "";
+      height: 210px;
+      position: absolute;
+      right: -75px;
+      top: -105px;
+      width: 210px;
+    }
+
+    .brand-lockup {
+      align-items: center;
+      display: inline-flex;
+      gap: 10px;
+      margin-bottom: 18px;
+      position: relative;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .brand-symbol {
+      align-items: center;
+      background: linear-gradient(140deg, #b94731, #f17b5e 45%, #8ee4d5 130%);
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      box-shadow: 0 0 0 4px rgba(142, 228, 213, 0.1), 0 8px 20px rgba(185, 71, 49, 0.32);
+      clip-path: polygon(14% 0, 100% 0, 86% 100%, 0 100%);
+      color: #fff;
+      display: inline-grid;
+      flex: 0 0 44px;
+      height: 44px;
+      place-items: center;
+      width: 44px;
+    }
+
+    .brand-symbol svg {
+      height: 37px;
+      width: 37px;
+    }
+
+    .brand-ring,
+    .brand-axis,
+    .brand-mountain,
+    .brand-route {
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .brand-ring-outer {
+      opacity: 0.62;
+      stroke-width: 1.25;
+    }
+
+    .brand-ring-inner {
+      opacity: 0.32;
+      stroke-dasharray: 2 4;
+      stroke-width: 1;
+    }
+
+    .brand-axis {
+      opacity: 0.62;
+      stroke-width: 1;
+    }
+
+    .brand-mountain {
+      stroke-width: 2.6;
+    }
+
+    .brand-route {
+      opacity: 0.72;
+      stroke-width: 1.7;
+    }
+
+    .brand-dot {
+      fill: currentColor;
+    }
+
+    .brand-name {
+      color: #fff;
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 0.95;
+      white-space: nowrap;
+    }
+
+    .brand-name strong {
+      color: #8ee4d5;
+    }
+
+    .brand-tagline {
+      color: rgba(255, 255, 255, 0.62);
+      display: flex;
+      font-size: 8px;
+      font-weight: bold;
+      gap: 6px;
+      letter-spacing: 1.2px;
+      margin-top: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brand-tagline span {
+      background: #b94731;
+      color: #fff;
+      padding: 3px 5px 2px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    h1 {
+      font-size: clamp(30px, 7vw, 48px);
+      line-height: 1;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    header p {
+      color: var(--cyan);
+      font-size: 14px;
+      letter-spacing: 1.4px;
+      margin: 18px 0 0;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    main {
+      padding: 34px;
+    }
+
+    .eyebrow {
+      color: #b94731;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .destinos {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      margin: 24px 0;
+    }
+
+    .destino {
+      background: #e8f1eb;
+      border: 1px solid rgba(18, 61, 58, 0.14);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .destino img {
+      display: block;
+      height: 150px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .destino-copy {
+      padding: 16px;
+    }
+
+    .destino h3 {
+      color: var(--forest);
+      font-size: 21px;
+      margin: 0;
+    }
+
+    .destino p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 8px 0 0;
+    }
+
+    .cta {
+      background: var(--deep);
+      border-radius: 12px;
+      margin: 28px 0 0;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #d8ebe5;
+      margin: 0 0 17px;
+    }
+
+    .cta a {
+      background: #b94731;
+      border-radius: 7px;
+      color: #fff;
+      display: inline-block;
+      font-weight: bold;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+
+    .cta a:hover {
+      background: #913727;
+    }
+
+    footer {
+      background: #edf4ef;
+      border-top: 1px solid rgba(18, 61, 58, 0.12);
+      color: var(--muted);
+      font-size: 11px;
+      padding: 20px 34px 25px;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--forest);
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 0;
+      }
+
+      .container {
+        border: 0;
+        border-radius: 0;
+      }
+
+      header,
+      main {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .destinos {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-lockup">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 72 72" focusable="false">
+            <circle class="brand-ring brand-ring-outer" cx="36" cy="36" r="28"></circle>
+            <circle class="brand-ring brand-ring-inner" cx="36" cy="36" r="21"></circle>
+            <path class="brand-axis" d="M36 11v10M36 51v10M11 36h10M51 36h10"></path>
+            <path class="brand-mountain" d="M16 49 29 30l7 9 10-17 10 27"></path>
+            <path class="brand-route" d="M20 52c10-6 22-6 32 0"></path>
+            <circle class="brand-dot" cx="48" cy="20" r="2.5"></circle>
+          </svg>
+        </span>
+        <span>
+          <span class="brand-name">Tierra <strong>Valiente</strong></span>
+          <span class="brand-tagline"><span>Tours</span><b>Guatemala / travel studio</b></span>
+        </span>
+      </div>
+      <h1>Tu próxima aventura</h1>
+      <p>Viaja con valentía, vive la aventura</p>
+    </header>
+    <main>
+      <p class="eyebrow">Edición especial · Guatemala</p>
+      <h2>Tu próxima historia empieza aquí</h2>
+      <p class="intro">Descubre destinos que conectan naturaleza, cultura y aventura. Esta semana te llevamos a dos lugares imprescindibles para sentir Guatemala de una forma auténtica.</p>
+      <section aria-labelledby="destinos-title">
+        <h2 id="destinos-title">Destinos destacados</h2>
+        <div class="destinos">
+          <article class="destino">
+            <img src="../../assets/propias/placeholder.svg" alt="Espacio para una fotografía propia del Lago de Atitlán">
+            <div class="destino-copy">
+              <h3>Lago de Atitlán</h3>
+              <p>Descubre la magia de sus pueblos, volcanes y paisajes únicos.</p>
+            </div>
+          </article>
+          <article class="destino">
+            <img src="../../assets/propias/placeholder.svg" alt="Espacio para una fotografía propia de Tikal">
+            <div class="destino-copy">
+              <h3>Tikal</h3>
+              <p>Explora majestuosas ruinas mayas en medio de la selva del Petén.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="cta">
+        <p>¿Listo para vivir algo extraordinario?</p>
+        <a href="../../index.html#contacto">Reserva tu próxima aventura ↗</a>
+      </div>
+    </main>
+    <footer>
+      © 2026 Tierra Valiente Tours · Lago de Atitlán, Guatemala<br>
+      <a href="../../index.html">Visita nuestra página principal</a> · <a href="../../assets/image-credits.md">Ver créditos de imágenes</a>
+    </footer>
+  </div>
+</body>
+</html>

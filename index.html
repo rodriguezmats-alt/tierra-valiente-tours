@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre tours auténticos de naturaleza, cultura y aventura en Guatemala con Tierra Valiente Tours.">
+  <meta name="theme-color" content="#07120f">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Tierra Valiente Tours | Viaja con propósito">
+  <meta property="og:description" content="Experiencias auténticas en Guatemala, diseñadas para viajeros que quieren vivir más y organizar menos.">
+  <meta property="og:type" content="website">
+  <title>Tierra Valiente Tours | Viaja con propósito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/experience.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#inicio" aria-label="Tierra Valiente Tours, inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 96 96" focusable="false">
+            <circle class="brand-logo-halo" cx="48" cy="48" r="38"></circle>
+            <circle class="brand-logo-sun" cx="69" cy="27" r="6"></circle>
+            <path class="brand-logo-mountain-back" d="M14 68 34 40l12 15 14-22 23 35Z"></path>
+            <path class="brand-logo-mountain-front" d="m22 69 18-20 8 10 10-13 17 23Z"></path>
+            <path class="brand-logo-route" d="M20 76c16-11 38-11 56 0"></path>
+            <path class="brand-logo-compass" d="M48 14v8M48 74v8M14 48h8M74 48h8"></path>
+          </svg>
+        </span>
+        <span class="brand-wordmark">
+          <span class="brand-name">Tierra <strong>Valiente</strong></span>
+          <span class="brand-tagline"><span>Tours</span><b>Guatemala / estudio de viajes</b></span>
+        </span>
+      </a>
+
+      <div class="language-switch" role="group" aria-label="Seleccionar idioma">
+        <button type="button" data-language="es" aria-label="Cambiar a español" aria-pressed="true"><span lang="es">ES</span></button>
+        <button type="button" data-language="en" aria-label="Cambiar a inglés" aria-pressed="false"><span lang="en">EN</span></button>
+      </div>
+
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Menú</span>
+      </button>
+
+      <nav class="main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#tours">Tours</a>
+        <a href="#experiencias">Nuestra forma de viajar</a>
+        <a href="#galeria">Galería</a>
+        <a href="#guia-atitlan">Guía de Atitlán</a>
+        <a href="#testimonios">Historias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <dialog class="menu-section-dialog" id="menu-section-dialog" aria-labelledby="menu-section-title">
+    <div class="menu-section-dialog-header">
+      <div>
+        <p class="eyebrow"><span></span> Navegación de Tierra Valiente</p>
+        <h2 id="menu-section-title">Sección seleccionada</h2>
+      </div>
+      <button class="menu-section-dialog-close" id="menu-section-dialog-close" type="button" aria-label="Cerrar sección">Cerrar <span aria-hidden="true">×</span></button>
+    </div>
+      <div class="menu-section-dialog-content" id="menu-section-dialog-content"></div>
+  </dialog>
+
+  <aside class="travel-banner" aria-label="Especial Guatemala">
+    <div class="container travel-banner-content">
+      <span class="banner-label">
+        <span aria-hidden="true">✦</span> Especial Guatemala
+      </span>
+
+      <p>
+        <strong>Descubre aventuras únicas en Guatemala</strong>
+        y convierte cada paisaje, sabor y encuentro en una historia inolvidable.
+      </p>
+
+      <a class="banner-link" href="#destinos">
+        Explorar ahora <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </aside>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="assets/optimized/propias/tierra_valiente.png.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="container hero-content">
+       <h1>Descubre<br><em>Guatemala.</em></h1>
+        <p class="hero-copy">Explora el Lago de Atitlán y otros destinos de Guatemala con experiencias guiadas que te acercan a sus paisajes y cultura. Cuéntanos qué te interesa y solicita una cotización a tu medida. Podemos responder consultas en inglés; la disponibilidad de guías en ese idioma depende de la fecha.</p>
+        <form class="hero-finder" id="hero-finder" aria-label="Encontrar una experiencia">
+          <label class="sr-only" for="experience-search">¿Qué te gustaría vivir?</label>
+          <input id="experience-search" name="experiencia" type="search" list="experience-options" placeholder="Busca: naturaleza, cultura, aventura..." autocomplete="off">
+          <datalist id="experience-options">
+            <option value="Naturaleza y agua"></option>
+            <option value="Cultura maya"></option>
+            <option value="Aventura y montaña"></option>
+            <option value="Lago de Atitlán"></option>
+            <option value="Volcán Acatenango"></option>
+          </datalist>
+          <button class="button button-primary" type="submit">Encontrar mi ruta <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="finder-status" id="finder-status" role="status" aria-live="polite"></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#destinos">Explorar destinos y tours <span aria-hidden="true">↗</span></a>
+          <a class="text-link text-link-light" href="#experiencias">Conoce nuestra forma de viajar <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span>Descubre más</span>
+      </div>
+    </section>
+
+    <section class="home-discovery-section" aria-labelledby="home-discovery-title">
+      <div class="container">
+        <div class="home-discovery-heading">
+          <p class="eyebrow"><span></span> Una experiencia distinta en cada orilla</p>
+          <h2 id="home-discovery-title">Descubre los pueblos del Lago de Atitlán</h2>
+          <p>Murales, miradores y travesías en lancha: explora algunos de los rincones que hacen único al lago.</p>
+        </div>
+        <div class="home-discovery-grid">
+          <a class="home-discovery-card" href="#san-juan-tours">
+            <img src="assets/optimized/propias/murales.jpg" alt="Mural colorido en una calle de San Juan La Laguna" loading="lazy" decoding="async">
+            <span class="home-discovery-copy">
+              <span class="home-discovery-label">San Juan La Laguna</span>
+              <strong>Murales, textiles y tradiciones vivas</strong>
+              <span class="home-discovery-link">Explora su cultura <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="home-discovery-card" href="#tour-lancha">
+            <img src="assets/optimized/gallery/070-lanchas-panajachel-atitlan-guatemala.jpg" alt="Lancha navegando por el Lago de Atitlán frente a los volcanes" loading="lazy" decoding="async">
+            <span class="home-discovery-copy">
+              <span class="home-discovery-label">Panajachel</span>
+              <strong>La puerta de entrada al lago</strong>
+              <span class="home-discovery-link">Explora los destinos <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="home-discovery-card" href="#destinos">
+            <img src="assets/optimized/gallery/077-mirador-sna-pedro.jpg" alt="Mirador colorido de San Pedro La Laguna con vista al lago" loading="lazy" decoding="async">
+            <span class="home-discovery-copy">
+              <span class="home-discovery-label">San Pedro La Laguna</span>
+              <strong>Miradores y aventura junto al agua</strong>
+              <span class="home-discovery-link">Encuentra tu experiencia <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+          <a class="home-discovery-card" href="#tour-lancha">
+            <img src="assets/optimized/gallery/071-lancheros.jpg" alt="Lanchas atracadas en el embarcadero durante el amanecer sobre el Lago de Atitlán" loading="lazy" decoding="async">
+            <span class="home-discovery-copy">
+              <span class="home-discovery-label">Rutas por el lago</span>
+              <strong>Conecta los pueblos en lancha</strong>
+              <span class="home-discovery-link">Planifica tu recorrido <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-section section-padding" id="destinos" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Experiencias para descubrir Guatemala</p>
+            <h2>Guatemala te espera.<br><em>Elige tu aventura.</em></h2>
+          </div>
+          <a class="text-link" href="#contacto">¿Otro destino? Escríbenos <span aria-hidden="true">→</span></a>
+        </div>
+
+        <form class="trip-search" id="trip-search" aria-label="Buscar una experiencia turística">
+          <div class="trip-search-field">
+            <label for="trip-origin">Origen</label>
+            <input id="trip-origin" name="origen" type="text" placeholder="¿Desde dónde viajas?" autocomplete="address-level2">
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-destination">Destino</label>
+            <select id="trip-destination" name="destino">
+              <option value="">Todos los destinos</option>
+              <option value="atitlan">Lago de Atitlán</option>
+              <option value="pueblos">Pueblos del Lago de Atitlán</option>
+              <option value="antigua">Antigua Guatemala</option>
+              <option value="tikal">Tikal ancestral</option>
+              <option value="semuc">Semuc Champey</option>
+              <option value="rio">Río Dulce</option>
+              <option value="acatenango">Volcán Acatenango</option>
+            </select>
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-date">Fecha tentativa</label>
+            <input id="trip-date" name="fecha" type="date">
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-travelers">Viajeros</label>
+            <select id="trip-travelers" name="viajeros">
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3-5">3 a 5</option>
+              <option value="6+">Más de 5</option>
+            </select>
+          </div>
+          <button class="button button-primary trip-search-button" type="submit">Buscar experiencia <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="trip-search-status" id="trip-search-status" role="status" aria-live="polite"></p>
+
+        <div class="destination-grid" role="group" aria-label="Catálogo de destinos turísticos en Guatemala">
+          <article class="destination-card destination-card-large" data-destination="atitlan" data-keywords="atitlan lago naturaleza cultura pueblos maya agua embarcadero">
+            <button class="destination-card-image gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
+              <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
+            </button>
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Lago de Atitlán</span><span>Naturaleza y cultura</span></div>
+              <h3>Lago de<br>Atitlán</h3>
+              <p>Volcanes, pueblos mayas y amaneceres junto al agua.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Lago de Atitlán" aria-label="Solicitar disponibilidad para el Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card destination-card-pueblos" data-destination="pueblos" data-keywords="pueblos atitlan santa catarina palopo san juan cultura textiles maya comunidad">
+            <img src="assets/optimized/propias/paseos_pueblos.jpg" alt="Paseo por un pueblo alrededor del Lago de Atitlán" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Atitlán</span><span>Pueblos vivos</span></div>
+              <h3>Pueblos a orillas<br>del Lago de Atitlán</h3>
+              <p>Textiles, mercados y embarcaderos muestran la vida cotidiana de las comunidades alrededor del lago.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Pueblos del Lago de Atitlán" aria-label="Solicitar disponibilidad para los pueblos del Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+            <details class="destination-gallery">
+              <summary>Ver galería de pueblos del Lago de Atitlán <span>7 fotografías</span></summary>
+              <div class="destination-gallery-note">
+                <strong>Una ruta visual alrededor del Lago de Atitlán</strong>
+                <p>Del lago y sus embarcaderos a los pueblos, mercados y paisajes que hacen único este destino.</p>
+              </div>
+              <div class="destination-gallery-grid">
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action blog-place-image-action--contain gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
+                    <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Lago de Atitlán</h3><p>Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el lago.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Panajachel" data-lightbox-image="assets/optimized/destinos/panajachel.jpg" data-lightbox-title="Panajachel" data-lightbox-alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" data-lightbox-description="Desde el embarcadero de Panajachel, las lanchas parten hacia pueblos abrazados por los volcanes. Una vista luminosa para comenzar a descubrir el lago." data-lightbox-source="">
+                    <img src="assets/optimized/destinos/panajachel.jpg" alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Panajachel</h3><p>Desde el embarcadero, las lanchas parten hacia pueblos abrazados por los volcanes: una vista luminosa para comenzar a descubrir el lago.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santa Catarina Palopó" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" data-lightbox-title="Santa Catarina Palopó" data-lightbox-alt="Casas pintadas y coloridas de Santa Catarina Palopó" data-lightbox-description="Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Painted_houses_of_Santa_Catarina_Palop%C3%B3_-_54974800704.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" alt="Casas pintadas y coloridas de Santa Catarina Palopó" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Santa Catarina Palopó</h3><p>Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Juan La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" data-lightbox-title="San Juan La Laguna" data-lightbox-alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" data-lightbox-description="Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Juan_la_laguna.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>San Juan La Laguna</h3><p>Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santiago Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" data-lightbox-title="Santiago Atitlán" data-lightbox-alt="Iglesia de Santiago Apóstol en Santiago Atitlán" data-lightbox-description="Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Iglesia_Santiago_Atitl%C3%A1n.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" alt="Iglesia de Santiago Apóstol en Santiago Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Santiago Atitlán</h3><p>Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Pedro La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" data-lightbox-title="San Pedro La Laguna" data-lightbox-alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" data-lightbox-description="Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Pedro_La_Laguna_Night_(Unsplash).jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>San Pedro La Laguna</h3><p>Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de la Reserva Natural Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" data-lightbox-title="Reserva Natural Atitlán" data-lightbox-alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" data-lightbox-description="Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Reserva_Natural_Atitl%C3%A1n.png">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Reserva Natural Atitlán</h3><p>Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo.</p></div>
+                </article>
+              </div>
+            </details>
+          </article>
+
+          <article class="destination-card" data-destination="antigua" data-keywords="antigua colonial cultura café volcanes ciudad">
+            <img src="assets/optimized/destinos/antigua-guatemala.jpg" alt="Ruinas de una iglesia colonial en Antigua Guatemala" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Sacatepéquez</span><span>Ciudad colonial</span></div>
+              <h3>Antigua<br>Guatemala</h3>
+              <p>Calles coloniales, café de altura y volcanes en el horizonte.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Antigua Guatemala" aria-label="Solicitar disponibilidad para Antigua Guatemala">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="tikal" data-keywords="tikal cultura maya historia selva patrimonio">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tikal%20Temple%20II%202026.jpg?width=1600" alt="Templo II de Tikal entre la selva del Petén" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Petén</span><span>Patrimonio maya</span></div>
+              <h3>Tikal<br>ancestral</h3>
+              <p>Templos mayas entre la selva viva del Petén.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Tikal ancestral" aria-label="Solicitar disponibilidad para Tikal">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="semuc" data-keywords="semuc champey aventura naturaleza agua selva pozas">
+            <img src="assets/optimized/destinos/semuc-champey.jpg" alt="Pozas turquesa de Semuc Champey rodeadas de selva" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Alta Verapaz</span><span>Agua y aventura</span></div>
+              <h3>Semuc<br>Champey</h3>
+              <p>Piscinas naturales y aventura en el corazón de Alta Verapaz.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Semuc Champey" aria-label="Solicitar disponibilidad para Semuc Champey">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="rio" data-keywords="rio dulce naturaleza agua caribe manglar cañon">
+            <img src="assets/optimized/destinos/rio-dulce.jpg" alt="Puente sobre el Río Dulce y su paisaje tropical" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Izabal</span><span>Naturaleza y agua</span></div>
+              <h3>Río<br>Dulce</h3>
+              <p>Manglares, cañones y la calma del Caribe guatemalteco.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Río Dulce" aria-label="Solicitar disponibilidad para Río Dulce">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="acatenango" data-keywords="acatenango aventura volcan montaña amanecer fuego trekking">
+            <img src="assets/optimized/destinos/volcan-acatenango.jpg" alt="Vista del Volcán Acatenango entre nubes y luz de atardecer" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Chimaltenango</span><span>Montaña y aventura</span></div>
+              <h3>Volcán<br>Acatenango</h3>
+              <p>Una noche entre montañas para ver nacer el volcán de Fuego.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Volcán Acatenango" aria-label="Solicitar disponibilidad para el Volcán Acatenango">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tour-featured-section section-padding" id="tours" aria-labelledby="rostro-maya-title" data-reveal>
+      <div class="container">
+        <details class="tour-card boat-tour-card" id="tour-lancha">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/070-lanchas-panajachel-atitlan-guatemala.jpg" alt="Lancha navegando por el Lago de Atitlán con los volcanes al fondo" width="1280" height="960" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Travesía por el Lago de Atitlán</span>
+              <div class="tour-media-caption"><span>Panajachel · pueblos de la ribera</span><strong>El lago, pueblo a pueblo</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Paseo en lancha · Atitlán</p>
+              <h2 id="tour-lancha-title">Pueblos del lago<br><em>una travesía para recordar</em></h2>
+              <p>Conecta Panajachel con pueblos de la ribera occidental y descubre el lago desde el agua. Las paradas y el regreso se coordinan según la ruta y la disponibilidad del día.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del paseo en lancha">
+                <span class="tour-fact"><strong>A coordinar</strong><small>Duración y paradas</small></span>
+                <span class="tour-fact"><strong>Ruta flexible</strong><small>Según disponibilidad</small></span>
+                <span class="tour-fact"><strong>Panajachel · ribera occidental</strong><small>Ruta de referencia</small></span>
+              </div>
+              <span class="tour-card-open">Conoce la ruta y cotiza <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Una ruta entre pueblos</p>
+              <p>La ruta lacustre más transitada conecta Panajachel con San Pedro La Laguna y puede hacer paradas en pueblos de la ribera occidental. Es una oportunidad para apreciar los volcanes, los embarcaderos y la vida cotidiana alrededor del lago.</p>
+              <div class="tour-inclusions">
+                <h3>Pueblos que puede incluir la travesía</h3>
+                <ul>
+                  <li><strong>Santa Cruz La Laguna y Jaibalito:</strong> pequeñas comunidades junto al lago, accesibles por embarcadero.</li>
+                  <li><strong>Tzununá y San Marcos La Laguna:</strong> paradas posibles en el recorrido hacia el oeste.</li>
+                  <li><strong>San Juan La Laguna y San Pedro La Laguna:</strong> pueblos de la ribera occidental que conectan con la ruta desde Panajachel.</li>
+                </ul>
+                <p>Las lanchas colectivas funcionan como transporte entre pueblos; las paradas disponibles, los tiempos de espera y el último regreso dependen del operador y del día. Confirma estos datos en el embarcadero antes de salir.</p>
+              </div>
+              <div class="tour-inclusions">
+                <h3>¿Y Santiago Atitlán?</h3>
+                <p>Santiago Atitlán está en la ribera sur y cuenta con conexión lacustre propia desde Panajachel. Sus salidas son menos frecuentes que las de la ruta occidental, por lo que conviene consultar el horario y planearlo como una travesía aparte, no asumir que forma parte del mismo recorrido.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Paseo en lancha · Lago de Atitlán">Cotizar paseo en lancha <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card" id="tour-rostro-maya">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/propias/paisaje_rostro_portada.jpg" alt="Amanecer sobre el Lago de Atitlán desde Rostro Maya, con un viajero en la cima" loading="lazy">
+              <span class="tour-media-badge">Experiencia en el Lago de Atitlán</span>
+              <div class="tour-media-caption"><span>Rostro Maya · Atitlán</span><strong>Conociendo el alba</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Tours · experiencia destacada en Atitlán</p>
+              <h2 id="rostro-maya-title">Rostro Maya<br><em>Conociendo el alba</em></h2>
+              <p>Sendero y amanecer desde un mirador del Lago de Atitlán; incluye transporte, entrada, fotos y bebida caliente con pan típico.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del tour Rostro Maya">
+                <span class="tour-fact"><strong>4 horas y media</strong><small>Duración</small></span>
+                <span class="tour-fact"><strong>Moderada</strong><small>Intensidad</small></span>
+                <span class="tour-fact"><strong>Lago de Atitlán</strong><small>Ruta</small></span>
+              </div>
+              <span class="tour-card-open">Ver galería e información <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Conoce la experiencia</p>
+              <p>En el Lago de Atitlán, Rostro Maya combina sendero, amanecer y un mirador natural para vivir el paisaje desde otra perspectiva.</p>
+              <div class="tour-inclusions">
+                <h3>¿Qué incluye?</h3>
+                <ul>
+                  <li>Transporte de ida y vuelta entre San Juan La Laguna y Rostro Maya</li>
+                  <li>Ticket de ingreso a Rostro Maya</li>
+                  <li>Fotografías del tour</li>
+                  <li>Café, té o chocolate caliente, acompañado de pan dulce típico tradicional</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Lago de Atitlán · Rostro Maya">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="tour-gallery" id="rostro-maya-galeria" aria-labelledby="rostro-maya-gallery-title">
+              <div class="tour-gallery-heading">
+                <div>
+                  <p class="eyebrow eyebrow-light"><span></span> Galería del tour · Rostro Maya</p>
+                  <h3 id="rostro-maya-gallery-title">Rostro Maya<br><em>Conociendo el alba</em></h3>
+                </div>
+                <p>Explora el recorrido en tres momentos: el sendero, las vistas desde la cima y la experiencia compartida.</p>
+              </div>
+
+              <div class="rostro-gallery-grid">
+            <div class="tour-gallery-chapter"><span>01 / RECORRIDO</span><h4>El sendero y el mirador</h4></div>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/tour_rostro1.jpg" alt="Pareja junto a la bandera de Guatemala en el mirador Rostro Maya" loading="lazy">
+              <figcaption><strong>La vista comienza aquí.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía de una pareja en Rostro Maya" data-lightbox-image="assets/optimized/propias/tour_rostro1.jpg" data-lightbox-title="Rostro Maya · La vista comienza aquí" data-lightbox-alt="Pareja junto a la bandera de Guatemala en el mirador Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/tour_rostro2.jpg" alt="Viajera disfrutando la vista desde Rostro Maya" loading="lazy">
+              <figcaption><strong>Un momento para recordar.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía de una viajera en Rostro Maya" data-lightbox-image="assets/optimized/propias/tour_rostro2.jpg" data-lightbox-title="Rostro Maya · Un momento para recordar" data-lightbox-alt="Viajera disfrutando la vista desde Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/tour_rostro3..jpg" alt="Viajera en el mirador de Rostro Maya sobre el Lago de Atitlán" loading="lazy">
+              <figcaption><strong>El lago bajo nuestros pies.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía del mirador de Rostro Maya" data-lightbox-image="assets/optimized/propias/tour_rostro3..jpg" data-lightbox-title="Rostro Maya · El lago bajo nuestros pies" data-lightbox-alt="Viajera en el mirador de Rostro Maya sobre el Lago de Atitlán" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+
+            <div class="tour-gallery-chapter"><span>02 / PAISAJE</span><h4>Amanecer y vistas del lago</h4></div>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/tour_rostro4.jpg" alt="Amanecer sobre el Lago de Atitlán desde Rostro Maya" loading="lazy">
+              <figcaption><strong>Luz sobre el lago.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía del amanecer en Rostro Maya" data-lightbox-image="assets/optimized/propias/tour_rostro4.jpg" data-lightbox-title="Rostro Maya · Luz sobre el lago" data-lightbox-alt="Amanecer sobre el Lago de Atitlán desde Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/atardecer_rostro.jpg.jpg" alt="Atardecer sobre el lago y las montañas visto desde Rostro Maya" loading="lazy">
+              <figcaption><strong>Cuando el día se despide.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía del atardecer en Rostro Maya" data-lightbox-image="assets/optimized/propias/atardecer_rostro.jpg.jpg" data-lightbox-title="Rostro Maya · Cuando el día se despide" data-lightbox-alt="Atardecer sobre el lago y las montañas visto desde Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/paisaje_rostro2.jpg" alt="Silueta de un viajero sobre una formación rocosa en Rostro Maya" loading="lazy">
+              <figcaption><strong>Una cima para sentirse libre.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía de la silueta en Rostro Maya" data-lightbox-image="assets/optimized/propias/paisaje_rostro2.jpg" data-lightbox-title="Rostro Maya · Una cima para sentirse libre" data-lightbox-alt="Silueta de un viajero sobre una formación rocosa en Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+
+            <div class="tour-gallery-chapter"><span>03 / EXPERIENCIA</span><h4>Momentos para compartir</h4></div>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/rostro_maya6.jpg" alt="Viajeros compartiendo en el mirador de Rostro Maya" loading="lazy">
+              <figcaption><strong>Compartir también es viajar.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía de viajeros en Rostro Maya" data-lightbox-image="assets/optimized/propias/rostro_maya6.jpg" data-lightbox-title="Rostro Maya · Compartir también es viajar" data-lightbox-alt="Viajeros compartiendo en el mirador de Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/rostro_maya7.jpg" alt="Bandera de Guatemala frente al amanecer en Rostro Maya" loading="lazy">
+              <figcaption><strong>El amanecer tiene bandera.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía de la bandera en Rostro Maya" data-lightbox-image="assets/optimized/propias/rostro_maya7.jpg" data-lightbox-title="Rostro Maya · El amanecer tiene bandera" data-lightbox-alt="Bandera de Guatemala frente al amanecer en Rostro Maya" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+            <figure class="rostro-gallery-item">
+              <img src="assets/optimized/propias/rostro_maya9.jpg" alt="Viajera contemplando las montañas y el Lago de Atitlán" loading="lazy">
+              <figcaption><strong>El horizonte se queda contigo.</strong></figcaption>
+              <button class="gallery-card-action" type="button" aria-label="Ampliar fotografía del horizonte de Rostro Maya" data-lightbox-image="assets/optimized/propias/rostro_maya9.jpg" data-lightbox-title="Rostro Maya · El horizonte se queda contigo" data-lightbox-alt="Viajera contemplando las montañas y el Lago de Atitlán" data-lightbox-source="">Ampliar <span aria-hidden="true">↗</span></button>
+            </figure>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <section class="san-juan-tours" id="san-juan-tours" aria-labelledby="san-juan-tours-title">
+          <div class="san-juan-tours-heading">
+            <div>
+              <p class="eyebrow eyebrow-light san-juan-tours-kicker"><span></span> Tour cultural · Lago de Atitlán</p>
+              <h3 id="san-juan-tours-title"><span>San Juan</span><em>La Laguna</em></h3>
+            </div>
+            <p><strong>Un pueblo, muchas formas de llevarlo contigo.</strong> Descubre la identidad y las tradiciones locales de San Juan La Laguna en una experiencia cultural.</p>
+          </div>
+
+          <details class="san-juan-featured-tour" aria-labelledby="san-juan-featured-title">
+            <summary class="san-juan-featured-summary">
+              <div class="san-juan-featured-media">
+                <img src="assets/optimized/propias/tour_avejas.jpg.jpg" alt="Experiencia cultural sobre abejas mayas en San Juan La Laguna" loading="lazy">
+                <span class="san-juan-featured-badge">Tour cultural</span>
+              </div>
+              <div class="san-juan-featured-content">
+                <p class="eyebrow eyebrow-light"><span></span> Una experiencia guiada en San Juan La Laguna</p>
+                <h4 id="san-juan-featured-title">Cultura viva, cooperativas y mirador</h4>
+                <p>Visita cuatro cooperativas locales junto a un guía local y conoce distintas expresiones de la vida y los saberes de San Juan. El recorrido finaliza en el mirador Kaqasiiwaan.</p>
+
+                <div class="san-juan-featured-facts" role="group" aria-label="Detalles del tour cultural de San Juan La Laguna">
+                  <span><strong>2 horas y media</strong><small>Duración</small></span>
+                  <span><strong>Moderado</strong><small>Esfuerzo</small></span>
+                  <span><strong>Guía local</strong><small>Acompañamiento</small></span>
+                </div>
+                <span class="san-juan-featured-toggle san-juan-featured-toggle-open">Ver las cinco paradas del tour <span aria-hidden="true">↓</span></span>
+                <span class="san-juan-featured-toggle san-juan-featured-toggle-close">Ocultar las paradas <span aria-hidden="true">↑</span></span>
+              </div>
+            </summary>
+
+            <div class="san-juan-featured-details">
+              <div class="san-juan-featured-route">
+                <p class="eyebrow eyebrow-light"><span></span> Cuatro cooperativas y un mirador</p>
+                <h5>Conoce San Juan parada a parada</h5>
+                <p class="san-juan-featured-route-intro">Una visita guiada a espacios de trabajo comunitario, con el mirador Kaqasiiwaan como parada final.</p>
+
+                <div class="san-juan-stop-grid">
+                  <article class="san-juan-stop-card">
+                    <img class="san-juan-stop-image" src="assets/optimized/gallery/008-abejas-mayas.jpg" alt="Entrada del espacio Mundo de Abejas Mayas, decorado con motivos de panales y abejas" width="1200" height="540" loading="lazy" decoding="async">
+                    <span class="san-juan-stop-number">01 · COOPERATIVA</span>
+                    <h6>Abejas mayas y meliponas</h6>
+                    <p>Acércate a las abejas nativas sin aguijón y conoce la miel, los productos artesanales y el trabajo de conservación de la cooperativa.</p>
+                    <details class="san-juan-stop-more">
+                      <summary>Descubre esta visita <span aria-hidden="true">＋</span></summary>
+                      <div class="san-juan-stop-details">
+                        <ul class="san-juan-stop-activities">
+                          <li>
+                            <strong>Recorrido por las colmenas</strong>
+                            <p>Observa de cerca las abejas europeas y las meliponas nativas sin aguijón, domesticadas por la cultura maya desde la época prehispánica.</p>
+                          </li>
+                          <li>
+                            <strong>Degustación de miel</strong>
+                            <p>Prueba mieles puras y orgánicas de origen polifloral y de montaña, extraídas directamente de los panales.</p>
+                          </li>
+                          <li>
+                            <strong>Productos artesanales y cosmética natural</strong>
+                            <p>Conoce los productos que elabora y ofrece la cooperativa: propóleo, polen, jalea real, cera natural, jabones, cremas y vino de miel.</p>
+                          </li>
+                          <li>
+                            <strong>Conservación de las abejas</strong>
+                            <p>Descubre cómo la siembra de plantas melíferas ayuda a alimentar a las abejas, cuidar los suelos y proteger a los polinizadores locales.</p>
+                          </li>
+                        </ul>
+                        <p class="san-juan-stop-impact"><strong>Una herencia viva:</strong> para los antiguos mayas, las meliponas, conocidas como Xunah Kaab’, eran sagradas y su miel tenía usos ceremoniales y medicinales. La cooperativa mantiene viva esta herencia tz’utujil y contribuye a proteger especies nativas.</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="san-juan-stop-card">
+                    <img class="san-juan-stop-image" src="assets/optimized/gallery/085-mujeres-tejedoras.jpg" alt="Artesanas mayas Tz'utujil trabajando en un telar de cintura en un taller textil" width="1600" height="1067" loading="lazy" decoding="async">
+                    <span class="san-juan-stop-number">02 · COOPERATIVA</span>
+                    <h6>Casa del tejido</h6>
+                    <p>Conoce cómo el algodón, los tintes naturales y el telar de cintura se unen en los tejidos de las artesanas tz’utujiles.</p>
+                    <details class="san-juan-stop-more">
+                      <summary>Descubre esta visita <span aria-hidden="true">＋</span></summary>
+                      <div class="san-juan-stop-details">
+                        <ul class="san-juan-stop-activities">
+                          <li>
+                            <strong>Del algodón al hilo</strong>
+                            <p>Observa cómo las artesanas limpian y golpean el algodón en bruto con herramientas tradicionales para estirarlo y convertirlo en hilo fino.</p>
+                          </li>
+                          <li>
+                            <strong>Tintes naturales</strong>
+                            <p>Conoce cómo crean los colores de sus prendas con materiales naturales de la región, como plantas, cortezas de árboles, semillas de achiote y cochinilla.</p>
+                          </li>
+                          <li>
+                            <strong>Telar de cintura</strong>
+                            <p>Presencia esta técnica ancestral, transmitida de generación en generación, y observa la precisión necesaria para plasmar patrones geométricos e iconografía maya.</p>
+                          </li>
+                          <li>
+                            <strong>Tienda de comercio justo</strong>
+                            <p>Explora huipiles, bufandas, chaquetas, bolsas y mantas. Las compras apoyan directamente el sustento de las familias locales.</p>
+                          </li>
+                        </ul>
+                        <p class="san-juan-stop-impact"><strong>Una cooperativa de mujeres:</strong> organizada por mujeres tejedoras, promueve el empoderamiento femenino, el comercio justo y la preservación sostenible de la cultura tz’utujil.</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="san-juan-stop-card">
+                    <img class="san-juan-stop-image" src="assets/optimized/gallery/029-cacao.jpg" alt="Artesana maya moliendo cacao en una piedra de molienda tradicional" width="1600" height="1067" loading="lazy" decoding="async">
+                    <span class="san-juan-stop-number">03 · COOPERATIVA</span>
+                    <h6>Licor Marrón Chocolate</h6>
+                    <p>Descubre en Licor Marrón Chocolate el recorrido del cacao guatemalteco y participa en un taller para crear tu propia barra personalizada.</p>
+                    <details class="san-juan-stop-more">
+                      <summary>Descubre esta visita <span aria-hidden="true">＋</span></summary>
+                      <div class="san-juan-stop-details">
+                        <ul class="san-juan-stop-activities">
+                          <li>
+                            <strong>Del grano a la pasta</strong>
+                            <p>Observa las semillas de cacao, el tostado artesanal sobre comal de barro, el descascarado a mano y la molienda hasta formar una pasta de cacao.</p>
+                          </li>
+                          <li>
+                            <strong>Taller práctico</strong>
+                            <p>Tuesta, pela y muele tu propio cacao, y diseña una barra personalizada con los ingredientes que elijas.</p>
+                          </li>
+                          <li>
+                            <strong>Historia y cultivo del cacao</strong>
+                            <p>Descubre el valor cultural y espiritual del cacao para la civilización maya, conocido como el “alimento de los dioses”, y aprende sobre su cultivo orgánico y el comercio justo para productores locales.</p>
+                          </li>
+                          <li>
+                            <strong>Degustación de sabores locales</strong>
+                            <p>Prueba nibs de cacao y bebidas tradicionales preparadas con agua o leche y especias como pimienta gorda, chile o cardamomo. También podrás descubrir trufas, barras con distintos porcentajes de cacao, té de cascarilla y licor artesanal de chocolate.</p>
+                          </li>
+                        </ul>
+                        <p class="san-juan-stop-impact"><strong>Una tradición viva:</strong> conoce cómo el cacao conecta los saberes ancestrales mayas con la producción sostenible de chocolate en Guatemala.</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="san-juan-stop-card">
+                    <img class="san-juan-stop-image" src="assets/optimized/gallery/009-alimentaci-n-de-la-cultura-maya.jpg" alt="Plantas, hierbas y alimentos tradicionales presentados sobre una mesa; imagen representativa de plantas locales" width="1000" height="666" loading="lazy" decoding="async">
+                    <span class="san-juan-stop-number">04 · COOPERATIVA</span>
+                    <h6>Q'oomanel</h6>
+                    <p>Conoce el jardín medicinal de la Asociación de Comadronas y Educadoras de Salud Q'oomanel y los saberes Tz'utujiles que sus integrantes mantienen vivos.</p>
+                    <details class="san-juan-stop-more">
+                      <summary>Descubre esta visita <span aria-hidden="true">＋</span></summary>
+                      <div class="san-juan-stop-details">
+                        <ul class="san-juan-stop-activities">
+                          <li>
+                            <strong>Recorrido por el huerto</strong>
+                            <p>Observa más de 42 especies de plantas, arbustos y hierbas medicinales, entre ellas aloe vera, romero, manzanilla y eucalipto, cuidadas en camas de cultivo tradicionales.</p>
+                          </li>
+                          <li>
+                            <strong>Usos tradicionales</strong>
+                            <p>Aprende cómo, según la cosmovisión local, se han utilizado estas plantas para el cuidado tradicional de malestares cotidianos, musculares y respiratorios.</p>
+                          </li>
+                          <li>
+                            <strong>De las plantas a los productos</strong>
+                            <p>Observa cómo hojas, raíces y cortezas frescas se transforman en productos naturales mediante fórmulas transmitidas de generación en generación.</p>
+                          </li>
+                          <li>
+                            <strong>Botica comunitaria</strong>
+                            <p>Conoce productos elaborados por la asociación, como champús naturales, tés, jarabes, jabones faciales orgánicos y pomadas, incluidos repelentes botánicos.</p>
+                          </li>
+                        </ul>
+                        <p class="san-juan-stop-impact"><strong>Liderazgo e impacto comunitario:</strong> integrada por mujeres Tz'utujil, comadronas tradicionales y hueseras que resguardan saberes comunitarios sobre partería y cuidado corporal, la asociación se formalizó en 2001 y beneficia a más de 120 familias de la zona. Los ingresos del turismo rural apoyan el mantenimiento de su botica comunitaria. Estos conocimientos forman parte de una tradición cultural viva y no sustituyen la atención de profesionales de salud.</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="san-juan-stop-card san-juan-stop-viewpoint">
+                    <img class="san-juan-stop-image" src="assets/optimized/gallery/148-vista-mirador4.jpg" alt="Viajera contempla el Lago de Atitlán desde una plataforma mirador decorada con colores" width="768" height="1024" loading="lazy" decoding="async">
+                    <span class="san-juan-stop-number">05 · PARADA FINAL</span>
+                    <h6>Mirador Kaqasiiwaan</h6>
+                    <p>En la cima del cerro Kaqasiiwaan, contempla la cuenca del lago desde una plataforma de madera pintada a mano con motivos Tz'utujil y vistas de 360 grados.</p>
+                    <details class="san-juan-stop-more">
+                      <summary>Descubre esta visita <span aria-hidden="true">＋</span></summary>
+                      <div class="san-juan-stop-details">
+                        <ul class="san-juan-stop-activities">
+                          <li>
+                            <strong>Panorámica de 360 grados</strong>
+                            <p>Disfruta una vista amplia de la cuenca del Lago de Atitlán desde la cima del cerro.</p>
+                          </li>
+                          <li>
+                            <strong>Plataforma con arte Tz'utujil</strong>
+                            <p>Conoce la plataforma de madera pintada a mano con motivos de la comunidad Tz'utujil.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </details>
+                  </article>
+                </div>
+              </div>
+
+              <a class="button button-primary san-juan-featured-cta" href="#contacto" data-booking-destination="Tour cultural · San Juan La Laguna">Cotizar tour cultural <span aria-hidden="true">↗</span></a>
+
+              <section class="san-juan-discovery" aria-labelledby="san-juan-discovery-title">
+                <h5 class="san-juan-discovery-title" id="san-juan-discovery-title">Más experiencias para descubrir San Juan</h5>
+                <p class="san-juan-discovery-intro">Estas visitas se pueden cotizar como paradas de una ruta personalizada por San Juan.</p>
+                <div class="san-juan-tours-grid">
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/cafe_vista.jpg.jpg" alt="Café servido con vistas al Lago de Atitlán" loading="lazy">
+                      <span>Café de altura</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Una taza de café en San Juan La Laguna</h6>
+                      <p>Prueba el café de la región y conoce cómo se cultiva y prepara. Consulta si hay degustaciones o recorridos disponibles.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · degustación o recorrido de café">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/calle de las sombrillas.jpg" alt="Calle de las Sombrillas y fachadas coloridas de San Juan La Laguna" loading="lazy">
+                      <span>Paseo cultural</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Calle de las Sombrillas</h6>
+                      <p>Recorre el pasaje de paraguas coloridos, un rincón fotogénico para pasear y disfrutar el ambiente del pueblo.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · Calle de las Sombrillas">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/calle_cafe2.jpg" alt="Visitantes recorriendo la Calle del Café entre murales y fachadas coloridas de San Juan La Laguna" loading="lazy">
+                      <span>Ruta urbana</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Calle del Café</h6>
+                      <p>Pasea entre fachadas coloridas, detalles de la vida local y el rótulo que da nombre a esta calle.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · Calle del Café">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/murales.jpg" alt="Mural colorido y arte callejero en una calle de San Juan La Laguna" loading="lazy">
+                      <span>Arte local</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Murales y arte en las calles</h6>
+                      <p>Descubre murales y fachadas pintadas en un paseo respetuoso por las calles y sus vecinos.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · murales y arte callejero">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/foto_iglesia.jpg.jpg" alt="Fachada de la iglesia parroquial de San Juan Bautista frente al parque central" loading="lazy">
+                      <span>Centro histórico</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Parque central e iglesia San Juan Bautista</h6>
+                      <p>Haz una pausa en el parque central y visita la iglesia parroquial, referente del pueblo.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · parque central e iglesia San Juan Bautista">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+
+                  <article class="san-juan-tour-card">
+                    <div class="san-juan-tour-media">
+                      <img src="assets/optimized/propias/vista_mirador4.jpg" alt="Atardecer sobre el Lago de Atitlán desde el mirador Kaqasiiwaan, con viajeros contemplando el paisaje" loading="lazy">
+                      <span>Mirador</span>
+                    </div>
+                    <div class="san-juan-tour-copy">
+                      <h6>Mirador Kaqasiiwaan</h6>
+                      <p>Sube sus gradas para contemplar el pueblo, el lago y los volcanes. Lleva agua y confirma localmente el acceso y las condiciones del sendero.</p>
+                      <a class="text-link text-link-light" href="#contacto" data-booking-destination="San Juan La Laguna · caminata al mirador Kaqasiiwaan">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </article>
+                </div>
+
+                <p class="san-juan-tours-source">Selección basada en experiencias descritas en la <a href="https://www.thoroughlytravel.com/san-juan-la-laguna-lake-atitlan/" target="_blank" rel="noopener noreferrer">guía de viaje de San Juan La Laguna de Thoroughly Travel <span aria-hidden="true">↗</span></a>. No representa un ranking oficial de visitas.</p>
+              </section>
+            </div>
+          </details>
+
+        <details class="tour-card atv-tour-card" id="tour-atv">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/140-tour-cuatrimoto.jpg" alt="Viajeros con casco sobre cuatrimotos frente a una montaña" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura en Atitlán</span>
+              <div class="tour-media-caption"><span>San Juan · San Pedro · San Marcos</span><strong>Explora en cuatrimoto</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Aventura entre pueblos y montaña</p>
+              <h2 id="tour-atv-title">Tour en Cuatrimoto (ATV)<br><em>por Atitlán</em></h2>
+              <p>Combina caminos de montaña, miradores panorámicos sobre el Lago de Atitlán y cultura maya en una aventura en cuatrimoto.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del tour en cuatrimoto">
+                <span class="tour-fact"><strong>3 a 5 horas</strong><small>Duración según la ruta</small></span>
+                <span class="tour-fact"><strong>Local o inter-pueblos</strong><small>Opciones de ruta</small></span>
+                <span class="tour-fact"><strong>San Juan · San Pedro · San Marcos</strong><small>Ruta</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>El Tour en Cuatrimoto (ATV) por San Juan La Laguna y sus pueblos vecinos es ideal para quienes buscan combinar adrenalina en la montaña, paisajes panorámicos del Lago de Atitlán y un acercamiento a las tradiciones mayas en un solo recorrido.</p>
+              <div class="tour-inclusions">
+                <h3>Recorrido</h3>
+                <ul>
+                  <li>San Juan La Laguna</li>
+                  <li>San Pedro La Laguna</li>
+                  <li>San Marcos La Laguna</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>¿Qué se hace y se ve durante el tour?</h3>
+                <ul>
+                  <li><strong>Paseo por senderos de montaña y cafetales:</strong> Conduce por caminos de terracería rodeados de campos de café, maíz y bosque alto, con ascensos y vistas despejadas hacia los volcanes.</li>
+                  <li><strong>Paradas en miradores panorámicos:</strong> Los guías realizan paradas en puntos elevados sobre San Pedro y San Juan para contemplar el lago, los volcanes San Pedro, Tolimán y Atitlán, y la silueta del Rostro Maya (Nariz del Indio).</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>¿Qué incluye la tarifa?</h3>
+                <p>Por lo general, la tarifa cubre:</p>
+                <ul>
+                  <li>Alquiler de la cuatrimoto (ATV) y combustible</li>
+                  <li>Casco de seguridad</li>
+                  <li>Acompañamiento de un guía local bilingüe</li>
+                  <li>Entradas a los miradores o reservas naturales incluidos en el itinerario</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Requisitos para conducir y viajar</h3>
+                <ul>
+                  <li>Para conducir la cuatrimoto se necesita una licencia de conducir vigente, física o digital.</li>
+                  <li>Los menores de edad y quienes prefieran no conducir pueden viajar como pasajeros.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Tour en Cuatrimoto (ATV) · San Juan, San Pedro y San Marcos">Cotizar esta experiencia <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card camping-tour-card" id="tour-camping">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/destinos/volcan-acatenango.jpg" alt="Vista del Volcán Acatenango entre nubes y luz de atardecer" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Naturaleza · Guatemala</span>
+              <div class="tour-media-caption"><span>Excursión al aire libre</span><strong>Una noche bajo las estrellas</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Camping · aventura y naturaleza</p>
+              <h2 id="tour-camping-title">Excursión de camping <br><em>bajo las estrellas</em></h2>
+              <p>Cambia el ritmo, desconéctate y disfruta una noche bajo el cielo de Guatemala. Cuéntanos dónde te gustaría acampar y coordinamos una propuesta según tus fechas, el grupo y la disponibilidad.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Detalles de la excursión de camping">
+                <span class="tour-fact"><strong>A coordinar</strong><small>Destino y duración</small></span>
+                <span class="tour-fact"><strong>Plan a tu medida</strong><small>Tipo de campamento</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Fecha y condiciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Planea una escapada de camping en Guatemala para disfrutar los paisajes, compartir al aire libre y pasar la noche en un campamento. Cuéntanos el destino que tienes en mente, las fechas y cuántas personas viajan para consultar las opciones disponibles.</p>
+              <div class="tour-inclusions">
+                <h3>Coordinamos contigo</h3>
+                <ul>
+                  <li>Destino, fechas y duración de la excursión.</li>
+                  <li>Tipo de campamento y actividades disponibles en el lugar.</li>
+                  <li>Transporte, comidas y equipo: te confirmamos qué incluye cada opción antes de reservar.</li>
+                  <li>Precio, requisitos y condiciones del sitio según la fecha y el tamaño del grupo.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de salir</h3>
+                <p>La disponibilidad y las condiciones dependen del destino, el clima y las reglas del campamento. Confirmaremos contigo el itinerario, qué llevar y las medidas de seguridad antes de dejar la reserva lista.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Excursión de camping · Guatemala">Cotizar excursión de camping <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card canopy-tour-card" id="tour-canopy">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/083-monta-as-rostro.jpg" alt="Paisaje montañoso de Guatemala" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura en la naturaleza</span>
+              <div class="tour-media-caption"><span>Canopy · Guatemala</span><strong>Deslízate entre paisajes</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Canopy · aventura al aire libre</p>
+              <h2 id="tour-canopy-title">Canopy <em>por el bosque</em></h2>
+              <p>Prepárate para elevarte sobre el bosque y mirar Guatemala desde otra perspectiva. Una aventura de aproximadamente una hora y media; el lugar y la disponibilidad se confirman al cotizar.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Detalles del tour de canopy">
+                <span class="tour-fact"><strong>Aprox. 1 hora y media</strong><small>Duración total</small></span>
+                <span class="tour-fact"><strong>Equipo de seguridad</strong><small>Según operador</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Fecha y condiciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Recorre un circuito de canopy y contempla el entorno natural desde otra perspectiva. La duración aproximada es de una hora y media; la ubicación, el horario y los detalles del circuito dependen del operador y la fecha.</p>
+              <div class="tour-inclusions">
+                <h3>Duración y coordinación</h3>
+                <ul>
+                  <li>Aproximadamente 1 hora y media para la actividad.</li>
+                  <li>Confirma ubicación, horario, precio y qué incluye la tarifa antes de reservar.</li>
+                  <li>La actividad depende de la disponibilidad, el clima y las condiciones del lugar.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <p>Consulta con el operador los requisitos de edad, estatura o peso, las medidas de seguridad y el equipo incluido. Sigue siempre las instrucciones del personal durante el recorrido.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Canopy · Guatemala">Cotizar canopy <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card" id="tour-parapente">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/150-vista-volcanes.jpg" alt="Vista panorámica de volcanes y montañas de Guatemala" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura en las alturas</span>
+              <div class="tour-media-caption"><span>Vuelo en tándem · Guatemala</span><strong>Vuela sobre los volcanes</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Parapente · Experiencia aérea</p>
+              <h2 id="tour-parapente-title">Parapente en tándem<br><em>una vista desde el cielo</em></h2>
+              <p>Siente la libertad de volar y contempla los paisajes de Guatemala desde el aire, acompañado por un piloto experto durante todo el vuelo.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del tour de parapente">
+                <span class="tour-fact"><strong>Aprox. 3 horas</strong><small>Duración total</small></span>
+                <span class="tour-fact"><strong>En tándem</strong><small>Con piloto</small></span>
+                <span class="tour-fact"><strong>Según el clima</strong><small>Condiciones de vuelo</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>El parapente en tándem es una forma accesible de volar: no necesitas experiencia previa porque un piloto guía el vuelo y se encarga del manejo del equipo. La actividad completa dura aproximadamente 3 horas e incluye la preparación, las indicaciones y el vuelo.</p>
+              <div class="tour-inclusions">
+                <h3>¿Cómo es la actividad?</h3>
+                <ul>
+                  <li><strong>Encuentro e indicaciones:</strong> el piloto explica el equipo, el despegue y el aterrizaje antes de volar.</li>
+                  <li><strong>Despegue y vuelo:</strong> vuelas junto al piloto y disfrutas de vistas amplias de montañas, valles y volcanes.</li>
+                  <li><strong>Aterrizaje y recuerdo:</strong> al terminar puedes pedir fotos o video del vuelo, según disponibilidad.</li>
+                </ul>
+                <p>La duración del vuelo en el aire depende de las corrientes y del viento; las 3 horas incluyen traslados, preparación y espera.</p>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <ul>
+                  <li>El vuelo depende del clima y puede reprogramarse si las condiciones no son seguras.</li>
+                  <li>Usa ropa cómoda, calzado cerrado y protección solar.</li>
+                  <li>Las restricciones de edad y peso las confirma el operador al cotizar.</li>
+                  <li>Consulta el punto de despegue, el precio y lo que incluye la tarifa según la fecha.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Parapente en tándem · Guatemala">Cotizar parapente <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card snorkel-tour-card" id="tour-snorkel">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/062-lago-volcanes.jpg" alt="Aguas del lago con volcanes al fondo, ideales para una experiencia de snorkel" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura acuática</span>
+              <div class="tour-media-caption"><span>Snorkel guiado · Guatemala</span><strong>Explora bajo el agua</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Snorkel · Experiencia acuática</p>
+              <h2 id="tour-snorkel-title">Tour de Snorkel<br><em>descubre el mundo submarino</em></h2>
+              <p>Ponte máscara y snorkel y observa la vida bajo la superficie en una salida guiada, pensada para disfrutar con calma y seguridad.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del tour de snorkel">
+                <span class="tour-fact"><strong>Aprox. 2 horas</strong><small>Duración total</small></span>
+                <span class="tour-fact"><strong>Con guía</strong><small>Acompañamiento</small></span>
+                <span class="tour-fact"><strong>Según el clima</strong><small>Condiciones del agua</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>El snorkel es una actividad sencilla para observar el entorno acuático sin necesidad de bucear con tanque. La salida dura aproximadamente 2 horas e incluye la preparación, las indicaciones de seguridad y el tiempo en el agua.</p>
+              <div class="tour-inclusions">
+                <h3>¿Cómo es la actividad?</h3>
+                <ul>
+                  <li><strong>Indicaciones iniciales:</strong> el guía explica el uso de la máscara y el snorkel, la respiración y las señales de seguridad.</li>
+                  <li><strong>Tiempo en el agua:</strong> nadas con calma, a tu ritmo, mientras observas el fondo y su entorno.</li>
+                  <li><strong>Cierre:</strong> al terminar, tiempo para descansar y tomar fotos del lugar.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <ul>
+                  <li>Se recomienda saber nadar o sentirse cómodo en el agua.</li>
+                  <li>Lleva traje de baño, toalla, ropa de cambio y protección solar.</li>
+                  <li>La actividad depende del clima y de las condiciones del agua.</li>
+                  <li>Confirma el lugar de la salida, el equipo incluido y el precio al cotizar.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Tour de snorkel · Guatemala">Cotizar snorkel <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card jetski-tour-card" id="tour-moto-acuatica">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/061-lago-volcan-jpg.jpg" alt="Lago de Atitlán y volcanes vistos desde la orilla" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura acuática</span>
+              <div class="tour-media-caption"><span>Lago de Atitlán · Guatemala</span><strong>Explora el lago en moto acuática</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Jet ski · Aventura en el agua</p>
+              <h2 id="tour-moto-acuatica-title">Moto acuática <em>por Atitlán</em></h2>
+              <p>Siente la emoción de deslizarte sobre el Lago de Atitlán con los volcanes como escenario. Elige una salida de 1 o 2 horas y consulta disponibilidad según el clima.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Detalles del tour en moto acuática">
+                <span class="tour-fact"><strong>1 o 2 horas</strong><small>Duración a elegir</small></span>
+                <span class="tour-fact"><strong>En el lago</strong><small>Experiencia acuática</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Clima y condiciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Recorre el Lago de Atitlán en moto acuática y disfruta de una perspectiva diferente de sus paisajes. Puedes consultar por una experiencia de 1 o 2 horas; la salida, el horario y la disponibilidad se confirman al cotizar.</p>
+              <div class="tour-inclusions">
+                <h3>Duración y coordinación</h3>
+                <ul>
+                  <li>Elige entre 1 o 2 horas, sujeto a disponibilidad.</li>
+                  <li>Confirma el punto de salida, horario, precio y qué incluye la tarifa antes de reservar.</li>
+                  <li>El recorrido depende del clima, las condiciones del lago y las indicaciones del operador.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <p>Consulta con el operador los requisitos de edad, quién puede conducir o viajar como pasajero y el equipo de seguridad incluido. Sigue siempre las instrucciones y las normas locales de navegación.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Moto acuática (jet ski) · Lago de Atitlán">Cotizar moto acuática <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card paddleboard-tour-card" id="tour-paddle-board">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/061-lago-volcan-jpg.jpg" alt="Lago de Atitlán y volcanes vistos desde la orilla" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura acuática</span>
+              <div class="tour-media-caption"><span>Paddle board · Lago de Atitlán</span><strong>Rema a tu propio ritmo</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Paddle board · experiencia en el agua</p>
+              <h2 id="tour-paddle-board-title">Paddle board</h2>
+              <p>Toma el remo, encuentra tu ritmo y contempla los volcanes de Atitlán desde el agua. Una forma cercana de disfrutar el lago; duración, punto de salida y disponibilidad se coordinan al cotizar.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Detalles de la experiencia de paddle board">
+                <span class="tour-fact"><strong>A coordinar</strong><small>Duración</small></span>
+                <span class="tour-fact"><strong>Sobre el lago</strong><small>Experiencia acuática</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Clima y condiciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Disfruta una salida de paddle board en el Lago de Atitlán y contempla sus volcanes y pueblos desde el agua. El horario, la duración, el punto de salida y el equipo disponible se confirman con el operador al cotizar.</p>
+              <div class="tour-inclusions">
+                <h3>Duración y coordinación</h3>
+                <ul>
+                  <li>La duración y el horario se coordinan según la opción disponible.</li>
+                  <li>Confirma el punto de salida, el precio y si la tabla y el equipo de seguridad están incluidos.</li>
+                  <li>La actividad depende del clima, las condiciones del lago y las indicaciones del operador.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <p>Consulta con el operador si se necesita experiencia previa, qué equipo de seguridad se proporciona y cuáles son las reglas locales para navegar. Sigue siempre las indicaciones antes de entrar al agua.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Paddle board · Lago de Atitlán">Cotizar paddle board <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card kayaking-tour-card" id="tour-kayaking">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/061-lago-volcan-jpg.jpg" alt="Lago de Atitlán y volcanes vistos desde la orilla" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Aventura acuática</span>
+              <div class="tour-media-caption"><span>Kayaking · Lago de Atitlán</span><strong>Descubre el lago remando</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Kayaking · aventura en el agua</p>
+              <h2 id="tour-kayaking-title">Kayaking</h2>
+              <p>Rema entre aguas y volcanes y descubre Atitlán desde una perspectiva diferente. Puedes salir desde una hora en adelante; el recorrido y la disponibilidad se coordinan al cotizar.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Detalles del tour de kayaking">
+                <span class="tour-fact"><strong>Desde 1 hora</strong><small>Duración mínima</small></span>
+                <span class="tour-fact"><strong>Sobre el lago</strong><small>Experiencia acuática</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Clima y condiciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Disfruta un recorrido en kayak por el Lago de Atitlán y contempla los volcanes y pueblos desde el agua. Puedes consultar por salidas de una hora en adelante; el horario, el punto de salida y la duración disponible se coordinan al cotizar.</p>
+              <div class="tour-inclusions">
+                <h3>Duración y coordinación</h3>
+                <ul>
+                  <li>Salidas desde una hora; consulta por opciones de mayor duración.</li>
+                  <li>Confirma punto de salida, horario, precio y si el kayak y el equipo de seguridad están incluidos.</li>
+                  <li>La actividad depende del clima, las condiciones del lago y las indicaciones del operador.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <p>Consulta con el operador si se necesita experiencia previa, los requisitos para participar y qué equipo de seguridad se proporciona. Sigue siempre las indicaciones antes de entrar al agua.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Kayaking · Lago de Atitlán">Cotizar kayaking <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card fishing-tour-card" id="tour-pesca">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/094-paseos-lancha3-jpg.jpg" alt="Lancha sobre el Lago de Atitlán, lista para una salida de pesca" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Pesca en el lago</span>
+              <div class="tour-media-caption"><span>Fishing tour · Guatemala</span><strong>Una mañana de pesca</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Fishing tour · Experiencia en el agua</p>
+              <h2 id="tour-pesca-title">Fishing tour<br><em>pesca con calma y buena compañía</em></h2>
+              <p>Navega en lancha, prueba la pesca con guía y disfruta del paisaje mientras esperas la mejor oportunidad del día.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del fishing tour">
+                <span class="tour-fact"><strong>Aprox. 4 horas</strong><small>Duración total</small></span>
+                <span class="tour-fact"><strong>Con guía</strong><small>Acompañamiento</small></span>
+                <span class="tour-fact"><strong>Según el clima</strong><small>Condiciones del agua</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles del tour <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Una salida pensada para quienes quieren pasar la mañana en el agua, ya sea como aficionados o por primera vez. Dura aproximadamente 4 horas e incluye el traslado en lancha, las indicaciones y el tiempo de pesca.</p>
+              <div class="tour-inclusions">
+                <h3>¿Cómo es la actividad?</h3>
+                <ul>
+                  <li><strong>Salida en lancha:</strong> navegas hasta el punto de pesca elegido por el guía según el día.</li>
+                  <li><strong>Pesca con guía:</strong> recibes indicaciones y apoyo durante toda la actividad, sin necesidad de experiencia previa.</li>
+                  <li><strong>Regreso tranquilo:</strong> vuelves con tiempo para fotos y para disfrutar del paisaje.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <ul>
+                  <li>Los resultados de la pesca dependen del clima, la temporada y las condiciones del agua.</li>
+                  <li>Lleva sombrero, protección solar, ropa cómoda y agua.</li>
+                  <li>Confirma el lugar de salida, el equipo incluido, las reglas de pesca locales y el precio al cotizar.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Fishing tour · Guatemala">Cotizar fishing tour <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card posada-tour-card" id="tour-posada">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/046-comida.jpg" alt="Comida casera servida en una posada local" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Cerca de la gente local</span>
+              <div class="tour-media-caption"><span>Posada · Experiencia local</span><strong>Hospitalidad de comunidad</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Posada · Vida local</p>
+              <h2 id="tour-posada-title">Experiencia en posada<br><em>cerca de las personas del lugar</em></h2>
+              <p>Comparte tiempo con anfitriones locales, conoce su día a día y vive Guatemala de una forma más cercana y humana.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos de la experiencia en posada">
+                <span class="tour-fact"><strong>Anfitriones locales</strong><small>Trato cercano</small></span>
+                <span class="tour-fact"><strong>A coordinar</strong><small>Duración y actividades</small></span>
+                <span class="tour-fact"><strong>Según disponibilidad</strong><small>Fechas</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> La experiencia</p>
+              <p>Una forma de viajar más cercana: te recibe una posada o familia local, conoces sus costumbres y compartes momentos sencillos como una comida o una conversación. Las actividades se adaptan a cada comunidad y a tus intereses.</p>
+              <div class="tour-inclusions">
+                <h3>¿Qué puedes vivir?</h3>
+                <ul>
+                  <li><strong>Recibimiento local:</strong> conoces a tus anfitriones y el lugar donde te reciben.</li>
+                  <li><strong>Comida y costumbres:</strong> compartes la mesa y aprendes de la cocina y las tradiciones del lugar.</li>
+                  <li><strong>Conversación y comunidad:</strong> descubres cómo es el día a día de quienes viven allí.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <ul>
+                  <li>Cuéntanos qué comunidad o destino te interesa y cuántas personas viajan.</li>
+                  <li>Confirmamos disponibilidad, hospedaje, comidas, actividades y precio al cotizar.</li>
+                  <li>Respeta las costumbres y normas de cada anfitrión y comunidad.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Experiencia en posada · Guatemala">Cotizar experiencia en posada <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card shuttle-tour-card" id="tour-shuttle">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/002-antigua-guatemala.jpg" alt="Calle de Antigua Guatemala con volcán al fondo" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Traslados</span>
+              <div class="tour-media-caption"><span>Aeropuerto · Antigua · San Juan La Laguna</span><strong>Llega sin complicaciones</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Shuttles · Traslados</p>
+              <h2 id="tour-shuttle-title">Shuttles y traslados<br><em>del aeropuerto a tu destino</em></h2>
+              <p>Viaja entre el aeropuerto, Antigua Guatemala y San Juan La Laguna, en ambos sentidos, en carro privado o en transporte compartido.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos de los traslados">
+                <span class="tour-fact"><strong>Hasta 4 horas</strong><small>Duración aproximada</small></span>
+                <span class="tour-fact"><strong>Privado o compartido</strong><small>Tipo de transporte</small></span>
+                <span class="tour-fact"><strong>Ida y vuelta</strong><small>Ambos sentidos</small></span>
+              </div>
+              <span class="tour-card-open">Ver rutas y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Rutas disponibles</p>
+              <p>Coordina tu llegada o salida con anticipación. La duración total, aproximadamente hasta 4 horas, depende de la ruta, el tráfico, el clima y las paradas.</p>
+              <div class="tour-inclusions">
+                <h3>Rutas</h3>
+                <ul>
+                  <li><strong>Aeropuerto ⇄ Antigua Guatemala:</strong> traslado directo en ambos sentidos.</li>
+                  <li><strong>Aeropuerto ⇄ San Juan La Laguna (Lago de Atitlán):</strong> traslado por carretera hacia el lago y regreso al aeropuerto. Es el trayecto más largo.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Elige cómo viajar</h3>
+                <ul>
+                  <li><strong>Carro privado:</strong> salida a tu horario, sin paradas ajenas y con espacio para tu equipaje.</li>
+                  <li><strong>Transporte público o compartido:</strong> opción más económica, con horarios y paradas fijos del servicio.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Antes de reservar</h3>
+                <ul>
+                  <li>Indícanos tu número de vuelo, la fecha y hora, y cuántas personas y maletas viajan.</li>
+                  <li>Los tiempos pueden cambiar por el tráfico, sobre todo en horas pico y en temporada alta.</li>
+                  <li>Confirmamos el punto de encuentro, el precio y el tipo de vehículo al cotizar.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Shuttle y traslados · Aeropuerto, Antigua y San Juan La Laguna">Cotizar traslado <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card hotels-tour-card" id="tour-hoteles">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/081-mirador-sanjuan.jpg" alt="Vista del Lago de Atitlán desde un mirador de San Juan La Laguna" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Hospedaje</span>
+              <div class="tour-media-caption"><span>San Juan La Laguna</span><strong>Dónde dormir junto al lago</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Hoteles · San Juan La Laguna</p>
+              <h2 id="tour-hoteles-title">Hoteles y hospedaje<br><em>con vista, calma y comunidad</em></h2>
+              <p>Una selección de opciones para dormir en San Juan, desde hospedajes sencillos con vista al lago hasta ecohoteles con jardines y experiencias.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos de hospedaje en San Juan La Laguna">
+                <span class="tour-fact"><strong>Ecohoteles y hospedajes</strong><small>Tipos de alojamiento</small></span>
+                <span class="tour-fact"><strong>Vista al lago</strong><small>Algunas opciones</small></span>
+                <span class="tour-fact"><strong>Te ayudamos a elegir</strong><small>Según tu presupuesto</small></span>
+              </div>
+              <span class="tour-card-open">Ver opciones y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Opciones para descansar</p>
+              <p>San Juan es un pueblo pequeño y tranquilo, donde casi todo se recorre a pie. Estas son algunas opciones conocidas; te ayudamos a elegir la que mejor se adapte a tu viaje.</p>
+              <div class="tour-inclusions">
+                <h3>Hoteles y hospedajes</h3>
+                <ul>
+                  <li><strong>Eco-Hotel MayAchik’:</strong> opción tranquila y enfocada en la sostenibilidad, con jardines, restaurante vegetariano y temazcal. Está en la parte alta del pueblo, a unos 10–15 minutos a pie del centro.</li>
+                  <li><strong>Eco Hotel Uxlabil:</strong> amplios jardines, jacuzzi, sauna y muelle propio; es una de las opciones de mayor categoría.</li>
+                  <li><strong>Hotel Pa Muelle:</strong> habitaciones cómodas, jardín y vistas al amanecer sobre el lago, cerca del muelle y atendido por una pareja local.</li>
+                  <li><strong>Hospedaje Estrella del Lago:</strong> opción sencilla y económica con vista al lago, cerca del camino al muelle.</li>
+                  <li><strong>Hotel Chi-Ya:</strong> frente al lago, con vistas panorámicas, habitaciones, cabañas y apartamentos.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Qué tener en cuenta</h3>
+                <ul>
+                  <li>Los servicios, precios y disponibilidad cambian según la temporada; los confirmamos al cotizar.</li>
+                  <li>Los hoteles de la parte alta ofrecen más privacidad, pero requieren caminar o tomar un tuk-tuk.</li>
+                </ul>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Hoteles y hospedaje · San Juan La Laguna">Cotizar hospedaje <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card restaurants-tour-card" id="tour-restaurantes">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/032-cafe-vista-jpg.jpg" alt="Café con vista a las montañas y al lago en San Juan La Laguna" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Gastronomía</span>
+              <div class="tour-media-caption"><span>San Juan La Laguna</span><strong>Café, comida y sabores locales</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Restaurantes · San Juan La Laguna</p>
+              <h2 id="tour-restaurantes-title">Dónde comer y tomar café<br><em>sabores de San Juan</em></h2>
+              <p>Desde café de la región y sabores locales hasta una comida con vista al lago, te ayudamos a encontrar el restaurante adecuado según la experiencia que buscas.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos de gastronomía en San Juan La Laguna">
+                <span class="tour-fact"><strong>Cafés locales</strong><small>Café de la región</small></span>
+                <span class="tour-fact"><strong>Comedores</strong><small>Comida sencilla</small></span>
+                <span class="tour-fact"><strong>Vista al lago</strong><small>Algunas opciones</small></span>
+              </div>
+              <span class="tour-card-open">Ver opciones y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Para comer y beber</p>
+              <p>¿Buscas una comida sencilla y local, probar buen café o disfrutar de una mesa con vista al lago? Te ayudamos a encontrar el restaurante adecuado según la experiencia que quieras vivir en San Juan.</p>
+              <div class="tour-inclusions">
+                <h3>Cafés</h3>
+                <ul>
+                  <li><strong>El Tata Café:</strong> pequeño negocio familiar con catas y recorridos centrados en el café y la sostenibilidad.</li>
+                  <li><strong>Café San Juan, Café Las Marías y La Voz Café:</strong> cafés locales para probar café recién preparado; La Voz Café también ofrece recorridos.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Comer en el pueblo</h3>
+                <ul>
+                  <li><strong>Comedores locales:</strong> repartidos por el centro, con comida sencilla y económica.</li>
+                  <li><strong>Restaurantes con vista:</strong> hay opciones con vistas al lago en el camino hacia el muelle.</li>
+                  <li><strong>Hotel Maya:</strong> restaurante de estilo ecológico con un menú más elaborado.</li>
+                  <li><strong>Restaurante vegetariano de MayAchik’:</strong> alternativa para quienes buscan comida vegetariana.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Para probar</h3>
+                <p>Pregunta por las chocofrutas que venden algunos negocios pequeños y por los snacks locales, como las habas fritas que se venden en el mirador.</p>
+                <p>Los horarios y menús pueden cambiar, y los precios pueden variar según el restaurante y lo que elijas. Te ayudamos a encontrar una opción que se ajuste a la experiencia que buscas; confirma los detalles antes de ir.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Restaurantes y café · San Juan La Laguna">Planificar mi visita <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card paragliding-tour-card restaurants-tour-card" id="tour-cafetales">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/033-cafecito.jpg" alt="Café local en San Juan La Laguna" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Café de origen</span>
+              <div class="tour-media-caption"><span>San Juan La Laguna</span><strong>Un paseo entre cafetales</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Café tours · San Juan La Laguna</p>
+              <h2 id="tour-cafetales-title">Tour de café y cafetales<br><em>del grano a la taza</em></h2>
+              <p>Camina entre cafetales, conoce la historia del café local y descubre el trabajo y las tradiciones detrás de cada taza en una experiencia cercana y llena de sabor.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del tour de café y cafetales">
+                <span class="tour-fact"><strong>Aprox. 2 horas</strong><small>Duración estimada</small></span>
+                <span class="tour-fact"><strong>Cafetales locales</strong><small>Café desde su origen</small></span>
+                <span class="tour-fact"><strong>Experiencia cultural</strong><small>Tradición y paisaje</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Un recorrido con aroma a café</p>
+              <p>Descubre el café de San Juan La Laguna más allá de la taza: recorre cafetales, conoce cómo se cultiva y aprende sobre el vínculo entre el café, las familias productoras y la vida local.</p>
+              <div class="tour-inclusions">
+                <h3>Una experiencia para disfrutar con calma</h3>
+                <ul>
+                  <li>Conoce el entorno donde crece el café y disfruta del paisaje de la región.</li>
+                  <li>Acércate a las etapas y tradiciones del cultivo del café local.</li>
+                  <li>Consulta si hay degustación u otras actividades disponibles para tu fecha.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Duración y detalles</h3>
+                <p>El recorrido dura aproximadamente 2 horas. El itinerario, el punto de encuentro, las actividades incluidas, el precio y la disponibilidad se confirman al cotizar; pueden variar según la temporada y el operador local.</p>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Tour de café y cafetales · San Juan La Laguna">Cotizar tour de café <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card art-tour-card" id="tour-paint">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/017-arte.jpg" alt="Pintura colorida inspirada en formas de la naturaleza" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Arte local</span>
+              <div class="tour-media-caption"><span>San Juan La Laguna</span><strong>Tu historia, en colores</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Paint tour · Experiencia creativa</p>
+              <h2 id="tour-paint-title">Pinta tu propia obra<br><em>inspirada en Guatemala</em></h2>
+              <p>Haz una pausa para crear: explora colores, formas y motivos inspirados en el paisaje y la riqueza artística de Guatemala, y llévate el recuerdo de una experiencia hecha por ti.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos de la experiencia de pintura">
+                <span class="tour-fact"><strong>Experiencia creativa</strong><small>Para crear tu obra</small></span>
+                <span class="tour-fact"><strong>Arte y cultura</strong><small>Inspiración local</small></span>
+                <span class="tour-fact"><strong>A coordinar</strong><small>Según fecha y disponibilidad</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Una experiencia para crear</p>
+              <p>Disfruta una experiencia de pintura inspirada en los colores, los paisajes y las expresiones artísticas de Guatemala. Explora tu lado creativo y crea una obra propia para recordar tu visita.</p>
+              <div class="tour-inclusions">
+                <h3>Tu momento creativo</h3>
+                <ul>
+                  <li>Convierte los paisajes y la paleta de colores local en inspiración para tu pintura.</li>
+                  <li>Una actividad tranquila y diferente para disfrutar en pareja, con amistades o en familia.</li>
+                  <li>Cuéntanos qué tipo de experiencia te gustaría vivir; te ayudamos a coordinar una opción adecuada.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Coordinación y detalles</h3>
+                <p>El lugar, la duración, el acompañamiento, los materiales, el precio y la disponibilidad se confirman al cotizar, ya que pueden variar según la fecha y el proveedor local.</p>
+              </div>
+              <div class="tour-gallery" aria-label="Galería de pinturas y arte local">
+                <div class="tour-gallery-heading">
+                  <h3>Colores que cuentan<br><em>historias</em></h3>
+                  <p>Una muestra de pinturas y expresiones artísticas para inspirar tu propia creación.</p>
+                </div>
+                <div class="rostro-gallery-grid">
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/020-arte2-jpg.jpg" alt="Pintura de un pescador en una lancha entre cultivos de maíz" loading="lazy" decoding="async">
+                    <figcaption><strong>Agua, maíz y memoria</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/018-arte-jpg.jpg" alt="Mural pintado con un jaguar y símbolos mayas" loading="lazy" decoding="async">
+                    <figcaption><strong>Fuerza y símbolos</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/021-arte3-jpg.jpg" alt="Pintura colorida de volcanes y paisaje" loading="lazy" decoding="async">
+                    <figcaption><strong>Volcanes en color</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/022-arte4-jpg.jpg" alt="Retrato artístico elaborado con mosaicos de colores" loading="lazy" decoding="async">
+                    <figcaption><strong>Retrato en mosaico</strong></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Paint tour · Experiencia de pintura · San Juan La Laguna">Cotizar paint tour <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="tour-card local-cooking-tour-card" id="tour-cooking">
+          <summary class="tour-featured-layout tour-card-summary">
+            <div class="tour-featured-media">
+              <img src="assets/optimized/gallery/133-tour-cacao-jpg.jpg" alt="Personas compartiendo una actividad tradicional de preparación de cacao" loading="lazy" decoding="async">
+              <span class="tour-media-badge">Sabores locales</span>
+              <div class="tour-media-caption"><span>San Juan La Laguna</span><strong>Cocina, comparte y descubre</strong></div>
+            </div>
+
+            <div class="tour-featured-copy tour-card-teaser">
+              <p class="eyebrow eyebrow-light"><span></span> Cooking tour · Cocina con locales</p>
+              <h2 id="tour-cooking-title">Cocina con anfitriones locales<br><em>sabores con historia</em></h2>
+              <p>Acércate a la cocina guatemalteca desde casa: conoce ingredientes de la región, comparte saberes y descubre las historias que hacen especial cada receta en una experiencia cálida y participativa.</p>
+              <div class="tour-facts tour-facts-teaser" role="group" aria-label="Datos del cooking tour">
+                <span class="tour-fact"><strong>Cocina local</strong><small>Sabores de la región</small></span>
+                <span class="tour-fact"><strong>Con anfitriones</strong><small>Intercambio cercano</small></span>
+                <span class="tour-fact"><strong>A coordinar</strong><small>Según fecha y disponibilidad</small></span>
+              </div>
+              <span class="tour-card-open">Ver detalles y cotizar <span aria-hidden="true">↗</span></span>
+            </div>
+          </summary>
+
+          <div class="tour-card-details">
+            <div class="tour-featured-copy tour-featured-info">
+              <p class="eyebrow eyebrow-light"><span></span> Una receta, muchas historias</p>
+              <p>Vive una experiencia culinaria junto a anfitriones locales y descubre la cultura a través de sus sabores. Según la opción disponible, podrás conocer ingredientes de temporada, aprender sobre técnicas y tradiciones de cocina y participar en la preparación de una receta.</p>
+              <div class="tour-inclusions">
+                <h3>Un encuentro alrededor de la cocina</h3>
+                <ul>
+                  <li>Acércate a ingredientes y sabores característicos de la región.</li>
+                  <li>Comparte un momento auténtico mientras conoces las historias y costumbres detrás de la cocina local.</li>
+                  <li>Cuéntanos tus intereses o necesidades alimentarias para buscar una experiencia adecuada.</li>
+                </ul>
+              </div>
+              <div class="tour-inclusions">
+                <h3>Coordinación y detalles</h3>
+                <p>La receta, el lugar, la duración, la participación en la preparación, los ingredientes incluidos, el precio y la disponibilidad dependen del anfitrión y la fecha; confirmamos los detalles al cotizar.</p>
+              </div>
+              <div class="tour-gallery" aria-label="Galería de cocina e ingredientes locales">
+                <div class="tour-gallery-heading">
+                  <h3>Del ingrediente<br><em>a la mesa</em></h3>
+                  <p>Imágenes de ingredientes y actividades locales que inspiran esta experiencia culinaria.</p>
+                </div>
+                <div class="rostro-gallery-grid">
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/009-alimentaci-n-de-la-cultura-maya.jpg" alt="Ingredientes frescos y productos tradicionales para preparar comida" loading="lazy" decoding="async">
+                    <figcaption><strong>Ingredientes de la región</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/133-tour-cacao-jpg.jpg" alt="Grupo compartiendo una actividad de preparación tradicional de cacao" loading="lazy" decoding="async">
+                    <figcaption><strong>Saberes que se comparten</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/134-tour-cacao2-jpg.jpg" alt="Anfitriona local preparando cacao con una piedra de molienda tradicional" loading="lazy" decoding="async">
+                    <figcaption><strong>Técnicas tradicionales</strong></figcaption>
+                  </figure>
+                  <figure class="rostro-gallery-item">
+                    <img src="assets/optimized/gallery/046-comida.jpg" alt="Comida servida para compartir alrededor de la mesa" loading="lazy" decoding="async">
+                    <figcaption><strong>Un momento para compartir</strong></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="tour-featured-actions">
+                <a class="button button-primary" href="#contacto" data-booking-destination="Cooking tour · Cocinando con locales · San Juan La Laguna">Cotizar cooking tour <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="slogans-section" aria-labelledby="slogans-title" data-reveal>
+      <div class="container">
+        <div class="slogans-heading">
+          <p class="eyebrow eyebrow-light"><span></span> Nuestra esencia</p>
+          <h2 id="slogans-title">Viaja con una<br><em>historia que contar.</em></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section section-padding" id="experiencias" data-reveal>
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow"><span></span> Nuestro destino central</p>
+          <h2>Guatemala se vive<br>con <em>calma.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>El Lago de Atitlán reúne la esencia de Tierra Valiente: volcanes, pueblos con identidad y encuentros que merecen tiempo.</p>
+          <p>Comenzamos por sus senderos, embarcaderos, mercados y comunidades para que cada viajero conozca el lago desde adentro.</p>
+          <p>Con guías locales y acompañamiento cercano, te ayudamos a descubrir cada lugar a tu propio ritmo: comparte una conversación, prueba los sabores de la región y déjate sorprender por paisajes que invitan a quedarse. Cuéntanos qué te gustaría vivir y preparemos juntos una experiencia auténtica en Guatemala.</p>
+          <a class="text-link" href="#guia-atitlan">Explorar Atitlán <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="container stats-row trust-row" role="group" aria-label="Beneficios de los recorridos">
+        <div class="stat-item">
+          <strong>Guiados</strong>
+          <span>para descubrir<br>Guatemala</span>
+        </div>
+        <div class="stat-item">
+          <strong>A tu medida</strong>
+          <span>cotización según<br>tu experiencia</span>
+        </div>
+        <div class="stat-item">
+          <strong>Contacto</strong>
+          <span>directo con Tierra<br>Valiente Tours</span>
+        </div>
+        <div class="stat-note">Cuéntanos tus fechas y<br>cuántas personas viajan.</div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-padding" id="galeria" aria-labelledby="gallery-title" data-reveal>
+      <div class="container">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow"><span></span> Fotografías locales</p>
+            <h2 id="gallery-title">Postales para<br><em>vivir despacio.</em></h2>
+          </div>
+          <p class="gallery-intro">Recorre Atitlán, Rostro Maya, los pueblos, sus sabores y otros destinos de Guatemala. Filtra las fotos y abre cualquiera para verla en grande.</p>
+        </div>
+
+        <div class="gallery-explorer">
+          <label class="gallery-search" for="gallery-search">
+            <span>Buscar fotografías</span>
+            <input id="gallery-search" type="search" placeholder="Prueba: lago, tejidos, mirador…" autocomplete="off">
+          </label>
+          <div class="gallery-toolbar" id="gallery-filters" role="group" aria-label="Filtrar fotografías por tema"></div>
+          <p class="gallery-result-count" id="gallery-result-count" role="status" aria-live="polite"></p>
+          <div class="gallery-grid" id="gallery-grid" role="group" aria-label="Fotografías locales de Tierra Valiente Tours"></div>
+          <p class="gallery-empty" id="gallery-empty" hidden>No encontramos fotos con ese filtro. Prueba con otro tema o palabra.</p>
+          <div class="gallery-load-more-wrap">
+            <button class="gallery-load-more" id="gallery-load-more" type="button">Ver más fotografías <span aria-hidden="true">↓</span></button>
+          </div>
+        </div>
+
+        <div class="gallery-footer">
+          <p class="gallery-license-note">Fotografías locales de Tierra Valiente Tours, optimizadas para una carga más ligera.</p>
+          <a class="gallery-next-step" href="#destinos">Explorar destinos y experiencias <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" aria-label="Cerrar fotografía ampliada">×</button>
+      <div class="lightbox-media">
+        <button class="lightbox-navigation lightbox-previous" type="button" aria-label="Ver fotografía anterior" hidden>‹</button>
+        <img id="lightbox-image" src="" alt="">
+        <button class="lightbox-navigation lightbox-next" type="button" aria-label="Ver fotografía siguiente" hidden>›</button>
+        <button class="lightbox-info-toggle" id="lightbox-info-toggle" type="button" aria-expanded="false" aria-controls="lightbox-details">Más información</button>
+      </div>
+      <div class="lightbox-copy" id="lightbox-details" hidden>
+        <p class="eyebrow eyebrow-light"><span aria-hidden="true"></span><strong id="lightbox-category">Vista ampliada</strong></p>
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-description" class="lightbox-description"></p>
+        <p id="lightbox-copyright" class="lightbox-copyright" hidden>
+          © Tierra Valiente Tours ·
+          <a href="https://fantastic-buttercream-902394.netlify.app/" target="_blank" rel="noopener noreferrer">Sitio oficial ↗</a>
+        </p>
+        <p class="lightbox-counter" id="lightbox-counter" role="status" aria-live="polite" hidden></p>
+        <a id="lightbox-source" class="gallery-source" href="" target="_blank" rel="noopener noreferrer">Ver imagen original ↗</a>
+      </div>
+    </dialog>
+
+    <section class="blog-section section-padding" id="guia-atitlan" aria-labelledby="guia-atitlan-title" data-reveal>
+      <div class="container">
+        <div class="section-heading blog-section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Guía de Atitlán</p>
+            <h2 id="guia-atitlan-title">Atitlán,<br><em>un lugar para sentir.</em></h2>
+          </div>
+          <div class="blog-meta"><span>Guatemala</span><span>8 lugares imperdibles</span><span>8 min de lectura</span></div>
+        </div>
+
+        <article class="blog-featured">
+          <div class="blog-featured-image">
+            <video autoplay muted loop playsinline controls preload="auto" aria-label="Atardecer en el embarcadero del Lago de Atitlán">
+              <source src="assets/propias/atardeceres_embarcadero.mp4.mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video.
+            </video>
+          </div>
+          <div class="blog-featured-copy">
+            <p class="blog-kicker">Artículo destacado · Tierra Valiente Tours</p>
+            <h3>Los mejores lugares para visitar en Atitlán</h3>
+            <p>Hay lugares que se visitan y otros que se sienten. El Lago de Atitlán pertenece a la segunda categoría: volcanes que abrazan el agua, pueblos llenos de historia y comunidades que mantienen vivas sus tradiciones.</p>
+            <p>Prepara la mochila, deja espacio para lo inesperado y acompáñanos a descubrir una de las regiones más especiales de Guatemala.</p>
+            <div class="blog-author"><span class="blog-author-mark">TV</span><span>Una guía para viajar<br><strong>con propósito</strong></span></div>
+          </div>
+        </article>
+
+        <div class="blog-footer">
+          <p>La mejor forma de conocer Atitlán es dejar que cada pueblo junto al lago te cuente su propia historia.</p>
+          <a class="button button-outline" href="#contacto">Planifica tu ruta <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="blog-source">Contenido turístico de referencia: <a href="https://inguat.gob.gt/" target="_blank" rel="noopener noreferrer">Instituto Guatemalteco de Turismo (INGUAT)</a>. Las imágenes de esta guía proceden de Wikimedia Commons y WordPress Photo Directory; sus fuentes y licencias están registradas en <code>assets/image-credits.md</code>.</p>
+        <details class="image-credits">
+          <summary>Ver fuentes y licencias de las imágenes</summary>
+          <p>Las fotografías se seleccionaron de fuentes con licencias abiertas. Las imágenes CC0 no requieren atribución; las imágenes Creative Commons con atribución requieren conservar el crédito indicado en <code>assets/image-credits.md</code>.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="values-section section-padding">
+      <div class="container values-layout">
+        <div class="values-image-wrap">
+          <img src="assets/optimized/propias/amanecer-embarcadero-atitlan.jpg" alt="Amanecer sobre el Lago de Atitlán, con lanchas en el embarcadero y volcanes al fondo" loading="lazy">
+          <div class="image-caption"><span>Una forma distinta</span><strong>de conocer el mundo.</strong></div>
+        </div>
+        <div class="values-content">
+          <p class="eyebrow"><span></span> Lo que nos mueve</p>
+          <h2>Más que un tour,<br>un <em>encuentro.</em></h2>
+          <p>Nos alejamos de lo predecible para acercarte a lo real. Trabajamos con guías locales, alojamientos con historia y comunidades que hacen de cada lugar algo único.</p>
+          <div class="value-list">
+            <div class="value-item"><div><h3>Ritmo humano</h3><p>Menos correr. Más mirar, conversar y disfrutar.</p></div></div>
+            <div class="value-item"><div><h3>Raíces locales</h3><p>Experiencias que dejan una huella positiva.</p></div></div>
+            <div class="value-item"><div><h3>Siempre contigo</h3><p>Acompañamiento antes, durante y después del viaje.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section section-padding" id="testimonios" data-reveal>
+      <div class="container">
+        <div class="section-heading testimonials-heading">
+          <div>
+            <p class="eyebrow"><span></span> Opiniones de viajeros</p>
+            <h2>Historias en<br><em>primera persona.</em></h2>
+          </div>
+        </div>
+
+        <div class="testimonial-grid" id="reviews-list">
+          <p class="review-empty-note">Cargando reseñas…</p>
+        </div>
+
+        <div class="review-layout">
+          <div class="review-invite">
+            <p class="eyebrow"><span></span> Tu experiencia también cuenta</p>
+            <h3>Comparte tu<br><em>historia.</em></h3>
+            <p>¿Ya viajaste con Tierra Valiente Tours? Cuéntales a otros viajeros cómo fue tu experiencia.</p>
+          </div>
+
+          <form class="review-form" id="review-form">
+            <div class="form-row">
+              <label for="review-name">Tu nombre<input id="review-name" name="review-name" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" maxlength="60" required></label>
+              <label for="review-destination">Destino<select id="review-destination" name="review-destination" required>
+                <option value="">Selecciona una opción</option>
+                <option>Lago de Atitlán</option>
+                <option>Rostro Maya</option>
+                <option>Antigua Guatemala</option>
+                <option>Tikal ancestral</option>
+                <option>Otro destino</option>
+              </select></label>
+            </div>
+            <label for="review-rating">Tu valoración
+              <select id="review-rating" name="review-rating" required>
+                <option value="">Selecciona estrellas</option>
+                <option value="5">★★★★★ · Excelente</option>
+                <option value="4">★★★★☆ · Muy buena</option>
+                <option value="3">★★★☆☆ · Buena</option>
+                <option value="2">★★☆☆☆ · Puede mejorar</option>
+                <option value="1">★☆☆☆☆ · Necesita mejorar</option>
+              </select>
+            </label>
+            <label for="review-message">Tu experiencia<textarea id="review-message" name="review-message" rows="4" placeholder="Cuéntanos qué fue lo que más disfrutaste..." maxlength="500" required></textarea></label>
+            <button class="button button-primary" type="submit">Publicar experiencia <span aria-hidden="true">↗</span></button>
+            <p class="review-note">Revisaremos tu reseña antes de publicarla. Solo las reseñas aprobadas serán visibles para otros viajeros.</p>
+            <p class="review-status" id="review-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto" data-reveal>
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow eyebrow-light"><span></span> Tu próxima aventura</p>
+          <h2>Cuéntanos qué<br>te hace <em>soñar.</em></h2>
+          <p>Cuéntanos tus ideas, tus fechas y eso que quieres sentir. Nosotros nos encargamos de convertirlo en un viaje memorable.</p>
+          <div class="contact-details">
+            <a href="mailto:tierra.valientetours@gmail.com">tierra.valientetours@gmail.com</a>
+            <a href="tel:+50249510579">+502 4951 0579 · Línea principal</a>
+            <a href="tel:+50256289002">+502 5628 9002 · Línea secundaria</a>
+            <a class="contact-whatsapp-link" href="https://wa.me/50249510579?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20planificar%20una%20experiencia." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al número principal">
+              <span class="whatsapp-mark" aria-hidden="true">WA</span> WhatsApp · línea principal <span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-whatsapp-link contact-whatsapp-secondary" href="https://wa.me/50256289002?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20experiencias." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al número secundario">
+              <span class="whatsapp-mark" aria-hidden="true">WA</span> WhatsApp · línea secundaria <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/tierra.valientetours@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud de cotización · Tierra Valiente Tours">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_replyto" id="reply-to" value="">
+          <div class="form-row">
+            <label for="nombre">Tu nombre<input id="nombre" name="nombre" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" required></label>
+            <label for="email">Tu email<input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required></label>
+          </div>
+          <div class="form-row">
+          <label for="destino">Destino de interés<select id="destino" name="destino" autocomplete="off"><option value="">Selecciona una opción</option><option>Antigua Guatemala</option><option>Lago de Atitlán</option><option>Pueblos del Lago de Atitlán</option><option>San Juan La Laguna</option><option>Tikal ancestral</option><option>Semuc Champey</option><option>Río Dulce</option><option>Volcán Acatenango</option><option>Paseo en lancha · Lago de Atitlán</option><option>Lago de Atitlán · Rostro Maya</option><option>Tour en Cuatrimoto (ATV) · San Juan, San Pedro y San Marcos</option><option>Excursión de camping · Guatemala</option><option>Moto acuática (jet ski) · Lago de Atitlán</option><option>Canopy · Guatemala</option><option>Paddle board · Lago de Atitlán</option><option>Kayaking · Lago de Atitlán</option><option>Parapente en tándem · Guatemala</option><option>Tour de snorkel · Guatemala</option><option>Fishing tour · Guatemala</option><option>Experiencia en posada · Guatemala</option><option>Shuttle y traslados · Aeropuerto, Antigua y San Juan La Laguna</option><option>Hoteles y hospedaje · San Juan La Laguna</option><option>Restaurantes y café · San Juan La Laguna</option><option>Tour de café y cafetales · San Juan La Laguna</option><option>Paint tour · Experiencia de pintura · San Juan La Laguna</option><option>Cooking tour · Cocinando con locales · San Juan La Laguna</option><option>Otro destino</option></select></label>
+            <label for="viajeros">Número de viajeros<select id="viajeros" name="viajeros" autocomplete="off"><option value="">Selecciona una opción</option><option>1 persona</option><option>2 personas</option><option>3 a 5 personas</option><option>Más de 5 personas</option></select></label>
+          </div>
+          <label for="fecha-viaje">Fecha aproximada<input id="fecha-viaje" name="fecha" type="date"></label>
+          <label for="mensaje">Cuéntanos un poco más<textarea id="mensaje" name="mensaje" rows="4" placeholder="Fechas aproximadas, estilo de viaje, algo que no puede faltar..."></textarea></label>
+          <button class="button button-primary button-submit" type="submit">Solicitar cotización <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Tu solicitud se enviará directamente a tierra.valientetours@gmail.com.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="home-contact-bar" aria-label="Contacto directo">
+    <div class="container home-contact-content">
+      <div class="home-contact-email">
+        <span>¿Planeamos tu próxima aventura?</span>
+        <a href="mailto:tierra.valientetours@gmail.com">tierra.valientetours@gmail.com</a>
+      </div>
+      <div class="home-contact-actions" role="group" aria-label="Escríbenos por WhatsApp">
+        <a class="button button-whatsapp" href="https://wa.me/50249510579?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20planificar%20una%20experiencia." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 502 4951 0579">WhatsApp · 4951 0579 <span aria-hidden="true">↗</span></a>
+        <a class="button button-whatsapp" href="https://wa.me/50256289002?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20experiencias." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 502 5628 9002">WhatsApp · 5628 9002 <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand brand-footer" href="#inicio" aria-label="Tierra Valiente Tours, inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 96 96" focusable="false">
+            <circle class="brand-logo-halo" cx="48" cy="48" r="38"></circle>
+            <circle class="brand-logo-sun" cx="69" cy="27" r="6"></circle>
+            <path class="brand-logo-mountain-back" d="M14 68 34 40l12 15 14-22 23 35Z"></path>
+            <path class="brand-logo-mountain-front" d="m22 69 18-20 8 10 10-13 17 23Z"></path>
+            <path class="brand-logo-route" d="M20 76c16-11 38-11 56 0"></path>
+            <path class="brand-logo-compass" d="M48 14v8M48 74v8M14 48h8M74 48h8"></path>
+          </svg>
+        </span>
+        <span class="brand-wordmark">
+          <span class="brand-name">Tierra <strong>Valiente</strong></span>
+          <span class="brand-tagline"><span>Tours</span><b>Guatemala / estudio de viajes</b></span>
+        </span>
+      </a>
+      <p>Viajar con propósito.<br>Recordar para siempre.</p>
+      <a class="button button-whatsapp footer-contact-link" href="https://wa.me/50249510579?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20planificar%20una%20experiencia." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Tierra Valiente Tours</span><span>Hecho para los que buscan algo más.</span><a href="#inicio">Volver arriba ↑</a></div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/50249510579?text=Hola%20Tierra%20Valiente%20Tours%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20tours." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de Tierra Valiente Tours">
+    <span class="whatsapp-mark" aria-hidden="true">WA</span>
+    <span class="floating-whatsapp-label">¿Hablamos?</span>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="gallery-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

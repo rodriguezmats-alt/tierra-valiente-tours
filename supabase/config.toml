@@ -1,0 +1,2 @@
+[functions.notify-pending-review]
+verify_jwt = false
