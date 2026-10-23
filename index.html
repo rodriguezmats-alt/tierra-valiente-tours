@@ -56,8 +56,8 @@
 
       <nav class="main-nav" id="main-navigation" aria-label="Navegación principal">
         <a class="active" href="#inicio">Inicio</a>
-        <a href="#destinos">Destinos</a>
         <a href="#tours">Tours</a>
+        <a href="#destinos">Destinos</a>
         <a href="#experiencias">Nuestra forma de viajar</a>
         <a href="#galeria">Galería</a>
         <a href="#guia-atitlan">Guía de Atitlán</a>
@@ -168,192 +168,6 @@
               <span class="home-discovery-link">Planifica tu recorrido <span aria-hidden="true">↗</span></span>
             </span>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="destinations-section section-padding" id="destinos" data-reveal>
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow"><span></span> Experiencias para descubrir Guatemala</p>
-            <h2>Guatemala te espera.<br><em>Elige tu aventura.</em></h2>
-          </div>
-          <a class="text-link" href="#contacto">¿Otro destino? Escríbenos <span aria-hidden="true">→</span></a>
-        </div>
-
-        <form class="trip-search" id="trip-search" aria-label="Buscar una experiencia turística">
-          <div class="trip-search-field">
-            <label for="trip-origin">Origen</label>
-            <input id="trip-origin" name="origen" type="text" placeholder="¿Desde dónde viajas?" autocomplete="address-level2">
-          </div>
-          <div class="trip-search-field">
-            <label for="trip-destination">Destino</label>
-            <select id="trip-destination" name="destino">
-              <option value="">Todos los destinos</option>
-              <option value="atitlan">Lago de Atitlán</option>
-              <option value="pueblos">Pueblos del Lago de Atitlán</option>
-              <option value="antigua">Antigua Guatemala</option>
-              <option value="tikal">Tikal ancestral</option>
-              <option value="semuc">Semuc Champey</option>
-              <option value="rio">Río Dulce</option>
-              <option value="acatenango">Volcán Acatenango</option>
-            </select>
-          </div>
-          <div class="trip-search-field">
-            <label for="trip-date">Fecha tentativa</label>
-            <input id="trip-date" name="fecha" type="date">
-          </div>
-          <div class="trip-search-field">
-            <label for="trip-travelers">Viajeros</label>
-            <select id="trip-travelers" name="viajeros">
-              <option value="1">1 persona</option>
-              <option value="2">2 personas</option>
-              <option value="3-5">3 a 5</option>
-              <option value="6+">Más de 5</option>
-            </select>
-          </div>
-          <button class="button button-primary trip-search-button" type="submit">Buscar experiencia <span aria-hidden="true">↗</span></button>
-        </form>
-        <p class="trip-search-status" id="trip-search-status" role="status" aria-live="polite"></p>
-
-        <div class="destination-grid" role="group" aria-label="Catálogo de destinos turísticos en Guatemala">
-          <article class="destination-card destination-card-large" data-destination="atitlan" data-keywords="atitlan lago naturaleza cultura pueblos maya agua embarcadero">
-            <button class="destination-card-image gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
-              <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
-            </button>
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Lago de Atitlán</span><span>Naturaleza y cultura</span></div>
-              <h3>Lago de<br>Atitlán</h3>
-              <p>Volcanes, pueblos mayas y amaneceres junto al agua.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Lago de Atitlán" aria-label="Solicitar disponibilidad para el Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="destination-card destination-card-pueblos" data-destination="pueblos" data-keywords="pueblos atitlan santa catarina palopo san juan cultura textiles maya comunidad">
-            <img src="assets/optimized/propias/paseos_pueblos.jpg" alt="Paseo por un pueblo alrededor del Lago de Atitlán" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Atitlán</span><span>Pueblos vivos</span></div>
-              <h3>Pueblos a orillas<br>del Lago de Atitlán</h3>
-              <p>Textiles, mercados y embarcaderos muestran la vida cotidiana de las comunidades alrededor del lago.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Pueblos del Lago de Atitlán" aria-label="Solicitar disponibilidad para los pueblos del Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-            <details class="destination-gallery">
-              <summary>Ver galería de pueblos del Lago de Atitlán <span>7 fotografías</span></summary>
-              <div class="destination-gallery-note">
-                <strong>Una ruta visual alrededor del Lago de Atitlán</strong>
-                <p>Del lago y sus embarcaderos a los pueblos, mercados y paisajes que hacen único este destino.</p>
-              </div>
-              <div class="destination-gallery-grid">
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action blog-place-image-action--contain gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
-                    <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>Lago de Atitlán</h3><p>Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el lago.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Panajachel" data-lightbox-image="assets/optimized/destinos/panajachel.jpg" data-lightbox-title="Panajachel" data-lightbox-alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" data-lightbox-description="Desde el embarcadero de Panajachel, las lanchas parten hacia pueblos abrazados por los volcanes. Una vista luminosa para comenzar a descubrir el lago." data-lightbox-source="">
-                    <img src="assets/optimized/destinos/panajachel.jpg" alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>Panajachel</h3><p>Desde el embarcadero, las lanchas parten hacia pueblos abrazados por los volcanes: una vista luminosa para comenzar a descubrir el lago.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santa Catarina Palopó" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" data-lightbox-title="Santa Catarina Palopó" data-lightbox-alt="Casas pintadas y coloridas de Santa Catarina Palopó" data-lightbox-description="Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Painted_houses_of_Santa_Catarina_Palop%C3%B3_-_54974800704.jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" alt="Casas pintadas y coloridas de Santa Catarina Palopó" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>Santa Catarina Palopó</h3><p>Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Juan La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" data-lightbox-title="San Juan La Laguna" data-lightbox-alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" data-lightbox-description="Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Juan_la_laguna.jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>San Juan La Laguna</h3><p>Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santiago Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" data-lightbox-title="Santiago Atitlán" data-lightbox-alt="Iglesia de Santiago Apóstol en Santiago Atitlán" data-lightbox-description="Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Iglesia_Santiago_Atitl%C3%A1n.jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" alt="Iglesia de Santiago Apóstol en Santiago Atitlán" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>Santiago Atitlán</h3><p>Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Pedro La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" data-lightbox-title="San Pedro La Laguna" data-lightbox-alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" data-lightbox-description="Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Pedro_La_Laguna_Night_(Unsplash).jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>San Pedro La Laguna</h3><p>Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje.</p></div>
-                </article>
-                <article class="blog-place-card">
-                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de la Reserva Natural Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" data-lightbox-title="Reserva Natural Atitlán" data-lightbox-alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" data-lightbox-description="Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Reserva_Natural_Atitl%C3%A1n.png">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" loading="lazy">
-                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
-                  </button>
-                  <div class="blog-place-content"><h3>Reserva Natural Atitlán</h3><p>Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo.</p></div>
-                </article>
-              </div>
-            </details>
-          </article>
-
-          <article class="destination-card" data-destination="antigua" data-keywords="antigua colonial cultura café volcanes ciudad">
-            <img src="assets/optimized/destinos/antigua-guatemala.jpg" alt="Ruinas de una iglesia colonial en Antigua Guatemala" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Sacatepéquez</span><span>Ciudad colonial</span></div>
-              <h3>Antigua<br>Guatemala</h3>
-              <p>Calles coloniales, café de altura y volcanes en el horizonte.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Antigua Guatemala" aria-label="Solicitar disponibilidad para Antigua Guatemala">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="destination-card" data-destination="tikal" data-keywords="tikal cultura maya historia selva patrimonio">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tikal%20Temple%20II%202026.jpg?width=1600" alt="Templo II de Tikal entre la selva del Petén" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Petén</span><span>Patrimonio maya</span></div>
-              <h3>Tikal<br>ancestral</h3>
-              <p>Templos mayas entre la selva viva del Petén.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Tikal ancestral" aria-label="Solicitar disponibilidad para Tikal">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="destination-card" data-destination="semuc" data-keywords="semuc champey aventura naturaleza agua selva pozas">
-            <img src="assets/optimized/destinos/semuc-champey.jpg" alt="Pozas turquesa de Semuc Champey rodeadas de selva" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Alta Verapaz</span><span>Agua y aventura</span></div>
-              <h3>Semuc<br>Champey</h3>
-              <p>Piscinas naturales y aventura en el corazón de Alta Verapaz.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Semuc Champey" aria-label="Solicitar disponibilidad para Semuc Champey">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="destination-card" data-destination="rio" data-keywords="rio dulce naturaleza agua caribe manglar cañon">
-            <img src="assets/optimized/destinos/rio-dulce.jpg" alt="Puente sobre el Río Dulce y su paisaje tropical" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Izabal</span><span>Naturaleza y agua</span></div>
-              <h3>Río<br>Dulce</h3>
-              <p>Manglares, cañones y la calma del Caribe guatemalteco.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Río Dulce" aria-label="Solicitar disponibilidad para Río Dulce">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="destination-card" data-destination="acatenango" data-keywords="acatenango aventura volcan montaña amanecer fuego trekking">
-            <img src="assets/optimized/destinos/volcan-acatenango.jpg" alt="Vista del Volcán Acatenango entre nubes y luz de atardecer" loading="lazy">
-            <div class="card-gradient"></div>
-            <div class="card-content">
-              <div class="card-topline"><span>Chimaltenango</span><span>Montaña y aventura</span></div>
-              <h3>Volcán<br>Acatenango</h3>
-              <p>Una noche entre montañas para ver nacer el volcán de Fuego.</p>
-              <a class="reserve-button" href="#contacto" data-booking-destination="Volcán Acatenango" aria-label="Solicitar disponibilidad para el Volcán Acatenango">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -1589,6 +1403,192 @@
             </div>
           </div>
         </details>
+      </div>
+    </section>
+
+    <section class="destinations-section section-padding" id="destinos" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Experiencias para descubrir Guatemala</p>
+            <h2>Guatemala te espera.<br><em>Elige tu aventura.</em></h2>
+          </div>
+          <a class="text-link" href="#contacto">¿Otro destino? Escríbenos <span aria-hidden="true">→</span></a>
+        </div>
+
+        <form class="trip-search" id="trip-search" aria-label="Buscar una experiencia turística">
+          <div class="trip-search-field">
+            <label for="trip-origin">Origen</label>
+            <input id="trip-origin" name="origen" type="text" placeholder="¿Desde dónde viajas?" autocomplete="address-level2">
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-destination">Destino</label>
+            <select id="trip-destination" name="destino">
+              <option value="">Todos los destinos</option>
+              <option value="atitlan">Lago de Atitlán</option>
+              <option value="pueblos">Pueblos del Lago de Atitlán</option>
+              <option value="antigua">Antigua Guatemala</option>
+              <option value="tikal">Tikal ancestral</option>
+              <option value="semuc">Semuc Champey</option>
+              <option value="rio">Río Dulce</option>
+              <option value="acatenango">Volcán Acatenango</option>
+            </select>
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-date">Fecha tentativa</label>
+            <input id="trip-date" name="fecha" type="date">
+          </div>
+          <div class="trip-search-field">
+            <label for="trip-travelers">Viajeros</label>
+            <select id="trip-travelers" name="viajeros">
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3-5">3 a 5</option>
+              <option value="6+">Más de 5</option>
+            </select>
+          </div>
+          <button class="button button-primary trip-search-button" type="submit">Buscar experiencia <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="trip-search-status" id="trip-search-status" role="status" aria-live="polite"></p>
+
+        <div class="destination-grid" role="group" aria-label="Catálogo de destinos turísticos en Guatemala">
+          <article class="destination-card destination-card-large" data-destination="atitlan" data-keywords="atitlan lago naturaleza cultura pueblos maya agua embarcadero">
+            <button class="destination-card-image gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
+              <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
+            </button>
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Lago de Atitlán</span><span>Naturaleza y cultura</span></div>
+              <h3>Lago de<br>Atitlán</h3>
+              <p>Volcanes, pueblos mayas y amaneceres junto al agua.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Lago de Atitlán" aria-label="Solicitar disponibilidad para el Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card destination-card-pueblos" data-destination="pueblos" data-keywords="pueblos atitlan santa catarina palopo san juan cultura textiles maya comunidad">
+            <img src="assets/optimized/propias/paseos_pueblos.jpg" alt="Paseo por un pueblo alrededor del Lago de Atitlán" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Atitlán</span><span>Pueblos vivos</span></div>
+              <h3>Pueblos a orillas<br>del Lago de Atitlán</h3>
+              <p>Textiles, mercados y embarcaderos muestran la vida cotidiana de las comunidades alrededor del lago.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Pueblos del Lago de Atitlán" aria-label="Solicitar disponibilidad para los pueblos del Lago de Atitlán">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+            <details class="destination-gallery">
+              <summary>Ver galería de pueblos del Lago de Atitlán <span>7 fotografías</span></summary>
+              <div class="destination-gallery-note">
+                <strong>Una ruta visual alrededor del Lago de Atitlán</strong>
+                <p>Del lago y sus embarcaderos a los pueblos, mercados y paisajes que hacen único este destino.</p>
+              </div>
+              <div class="destination-gallery-grid">
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action blog-place-image-action--contain gallery-card-action" type="button" aria-label="Ampliar foto del Lago de Atitlán" data-lightbox-image="assets/optimized/propias/lago_atitlan_embarcadero.jpg" data-lightbox-title="Lago de Atitlán" data-lightbox-alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" data-lightbox-description="Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el Lago de Atitlán." data-lightbox-source="">
+                    <img src="assets/optimized/propias/lago_atitlan_embarcadero.jpg" alt="Lanchas sobre el Lago de Atitlán, con un volcán y un embarcadero al fondo" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Lago de Atitlán</h3><p>Aguas tranquilas, volcanes y comunidades llenas de cultura viva rodean el lago.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Panajachel" data-lightbox-image="assets/optimized/destinos/panajachel.jpg" data-lightbox-title="Panajachel" data-lightbox-alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" data-lightbox-description="Desde el embarcadero de Panajachel, las lanchas parten hacia pueblos abrazados por los volcanes. Una vista luminosa para comenzar a descubrir el lago." data-lightbox-source="">
+                    <img src="assets/optimized/destinos/panajachel.jpg" alt="Embarcadero de Panajachel y lancha sobre el Lago de Atitlán, con volcanes al fondo" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Panajachel</h3><p>Desde el embarcadero, las lanchas parten hacia pueblos abrazados por los volcanes: una vista luminosa para comenzar a descubrir el lago.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santa Catarina Palopó" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" data-lightbox-title="Santa Catarina Palopó" data-lightbox-alt="Casas pintadas y coloridas de Santa Catarina Palopó" data-lightbox-description="Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Painted_houses_of_Santa_Catarina_Palop%C3%B3_-_54974800704.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Painted%20houses%20of%20Santa%20Catarina%20Palop%C3%B3%20-%2054974800704.jpg?width=1600" alt="Casas pintadas y coloridas de Santa Catarina Palopó" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Santa Catarina Palopó</h3><p>Un pueblo colorido a orillas del lago, donde las fachadas y los textiles hablan de identidad.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Juan La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" data-lightbox-title="San Juan La Laguna" data-lightbox-alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" data-lightbox-description="Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Juan_la_laguna.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20la%20laguna.jpg?width=1600" alt="Vista aérea de San Juan La Laguna junto al Lago de Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>San Juan La Laguna</h3><p>Murales, talleres de textiles y arte local para conocer la creatividad de la comunidad.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de Santiago Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" data-lightbox-title="Santiago Atitlán" data-lightbox-alt="Iglesia de Santiago Apóstol en Santiago Atitlán" data-lightbox-description="Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Iglesia_Santiago_Atitl%C3%A1n.jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Santiago%20Atitl%C3%A1n.jpg?width=1600" alt="Iglesia de Santiago Apóstol en Santiago Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Santiago Atitlán</h3><p>Tradición Tz’utujil, espiritualidad y una historia que se descubre caminando con respeto.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de San Pedro La Laguna" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" data-lightbox-title="San Pedro La Laguna" data-lightbox-alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" data-lightbox-description="Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje." data-lightbox-source="https://commons.wikimedia.org/wiki/File:San_Pedro_La_Laguna_Night_(Unsplash).jpg">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/San%20Pedro%20La%20Laguna%20Night%20%28Unsplash%29.jpg?width=1600" alt="Noche estrellada sobre San Pedro La Laguna y el Lago de Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>San Pedro La Laguna</h3><p>Aventura, cafetales y vistas del lago para quienes quieren sumar movimiento al viaje.</p></div>
+                </article>
+                <article class="blog-place-card">
+                  <button class="blog-place-image-action gallery-card-action" type="button" aria-label="Ampliar foto de la Reserva Natural Atitlán" data-lightbox-image="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" data-lightbox-title="Reserva Natural Atitlán" data-lightbox-alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" data-lightbox-description="Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo." data-lightbox-source="https://commons.wikimedia.org/wiki/File:Reserva_Natural_Atitl%C3%A1n.png">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reserva%20Natural%20Atitl%C3%A1n.png?width=1600" alt="Lago y volcanes de Atitlán vistos desde la Reserva Natural Atitlán" loading="lazy">
+                    <span>Ampliar foto <b aria-hidden="true">↗</b></span>
+                  </button>
+                  <div class="blog-place-content"><h3>Reserva Natural Atitlán</h3><p>Senderos, mariposario, puentes colgantes y naturaleza para respirar más profundo.</p></div>
+                </article>
+              </div>
+            </details>
+          </article>
+
+          <article class="destination-card" data-destination="antigua" data-keywords="antigua colonial cultura café volcanes ciudad">
+            <img src="assets/optimized/destinos/antigua-guatemala.jpg" alt="Ruinas de una iglesia colonial en Antigua Guatemala" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Sacatepéquez</span><span>Ciudad colonial</span></div>
+              <h3>Antigua<br>Guatemala</h3>
+              <p>Calles coloniales, café de altura y volcanes en el horizonte.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Antigua Guatemala" aria-label="Solicitar disponibilidad para Antigua Guatemala">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="tikal" data-keywords="tikal cultura maya historia selva patrimonio">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tikal%20Temple%20II%202026.jpg?width=1600" alt="Templo II de Tikal entre la selva del Petén" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Petén</span><span>Patrimonio maya</span></div>
+              <h3>Tikal<br>ancestral</h3>
+              <p>Templos mayas entre la selva viva del Petén.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Tikal ancestral" aria-label="Solicitar disponibilidad para Tikal">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="semuc" data-keywords="semuc champey aventura naturaleza agua selva pozas">
+            <img src="assets/optimized/destinos/semuc-champey.jpg" alt="Pozas turquesa de Semuc Champey rodeadas de selva" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Alta Verapaz</span><span>Agua y aventura</span></div>
+              <h3>Semuc<br>Champey</h3>
+              <p>Piscinas naturales y aventura en el corazón de Alta Verapaz.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Semuc Champey" aria-label="Solicitar disponibilidad para Semuc Champey">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="rio" data-keywords="rio dulce naturaleza agua caribe manglar cañon">
+            <img src="assets/optimized/destinos/rio-dulce.jpg" alt="Puente sobre el Río Dulce y su paisaje tropical" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Izabal</span><span>Naturaleza y agua</span></div>
+              <h3>Río<br>Dulce</h3>
+              <p>Manglares, cañones y la calma del Caribe guatemalteco.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Río Dulce" aria-label="Solicitar disponibilidad para Río Dulce">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="destination-card" data-destination="acatenango" data-keywords="acatenango aventura volcan montaña amanecer fuego trekking">
+            <img src="assets/optimized/destinos/volcan-acatenango.jpg" alt="Vista del Volcán Acatenango entre nubes y luz de atardecer" loading="lazy">
+            <div class="card-gradient"></div>
+            <div class="card-content">
+              <div class="card-topline"><span>Chimaltenango</span><span>Montaña y aventura</span></div>
+              <h3>Volcán<br>Acatenango</h3>
+              <p>Una noche entre montañas para ver nacer el volcán de Fuego.</p>
+              <a class="reserve-button" href="#contacto" data-booking-destination="Volcán Acatenango" aria-label="Solicitar disponibilidad para el Volcán Acatenango">Solicitar disponibilidad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
