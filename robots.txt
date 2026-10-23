@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tierra-valiente-tours.netlify.app/sitemap.xml
