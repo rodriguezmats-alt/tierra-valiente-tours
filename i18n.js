@@ -1141,6 +1141,7 @@
     'Canopy': 'Ziplining',
     'por el bosque': 'through the forest',
     'Aprox. 1 hora y media': 'Approx. 1.5 hours',
+    'Aproximadamente 1 hora y media para la actividad.': 'Approximately 1.5 hours for the activity.',
     'Equipo de seguridad': 'Safety equipment',
     'Según operador': 'Depending on the operator',
     'Detalles del tour de canopy': 'Zipline tour details',
