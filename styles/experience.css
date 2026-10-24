@@ -3135,6 +3135,122 @@ img:not(.hero-image img) {
   text-align: center;
 }
 
+.atitlan-lake-facts {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 48px 0;
+}
+
+.atitlan-lake-facts strong {
+  color: var(--cyan);
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.atitlan-lake-facts span {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.guide-towns-heading {
+  max-width: 680px;
+}
+
+.guide-towns-heading h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+  line-height: 1.15;
+  margin: 8px 0 12px;
+}
+
+.guide-towns-heading p:last-child {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.guide-towns-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 28px 0 40px;
+}
+
+.guide-town {
+  background: rgba(125, 240, 204, 0.06);
+  border: 1px solid rgba(125, 240, 204, 0.18);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.guide-town h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  margin: 0 0 4px;
+}
+
+.guide-town-tag {
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.guide-town p:last-child {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.guide-tips {
+  border-left: 3px solid var(--cyan);
+  margin-bottom: 40px;
+  padding: 4px 0 4px 22px;
+}
+
+.guide-tips h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 12px;
+}
+
+.guide-tips ul {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-tips li {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.guide-tips strong {
+  color: var(--ink);
+}
+
+@media (max-width: 980px) {
+  .atitlan-lake-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .guide-towns-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .atitlan-lake-facts,
+  .guide-towns-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .home-contact-address {
   display: block;
   font-size: 0.9rem;
