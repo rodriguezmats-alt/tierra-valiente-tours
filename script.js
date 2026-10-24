@@ -237,6 +237,10 @@ document.addEventListener('DOMContentLoaded', () => {
     activeSection.classList.add('is-revealed');
     sectionDialogContent.append(activeSection);
     loadSectionImages(activeSection);
+    activeSection.querySelectorAll('video[autoplay]').forEach((video) => {
+      video.muted = true;
+      video.play().catch(() => {});
+    });
     activeRelatedSections = relatedSections.get(activeSection) || [];
     activeRelatedSections.forEach((section) => {
       section.hidden = false;
