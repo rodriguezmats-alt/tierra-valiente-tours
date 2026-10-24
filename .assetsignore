@@ -1,0 +1,10 @@
+.git
+.github
+.vscode
+supabase
+node_modules
+wrangler.jsonc
+.assetsignore
+.gitignore
+netlify.toml
+*.md
