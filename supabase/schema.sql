@@ -9,7 +9,14 @@ create table if not exists public.reviews (
 );
 
 alter table public.reviews
-  add column if not exists status text not null default 'pending';
+  add column if not exists status text not null default 'approved';
+
+alter table public.reviews
+  alter column status set default 'approved';
+
+alter table public.reviews
+  add column if not exists email varchar(120)
+  check (email is null or email ~* '^[^@[:space:]]+@[^@[:space:]]+\.[^@[:space:]]+$');
 
 do $$
 begin
@@ -37,17 +44,24 @@ drop policy if exists "Anyone can publish reviews" on public.reviews;
 drop policy if exists "Anyone can read approved reviews" on public.reviews;
 drop policy if exists "Anyone can submit pending reviews" on public.reviews;
 
+drop policy if exists "Anyone can submit pending reviews" on public.reviews;
+drop policy if exists "Anyone can submit reviews" on public.reviews;
+
 create policy "Anyone can read reviews"
   on public.reviews
   for select
   to anon, authenticated
   using (status = 'approved');
 
-create policy "Anyone can submit pending reviews"
+create policy "Anyone can submit reviews"
   on public.reviews
   for insert
   to anon, authenticated
-  with check (status = 'pending');
+  with check (status = 'approved');
 
+-- El correo es privado: el público puede escribirlo, pero nunca leerlo.
 revoke all on public.reviews from anon, authenticated;
-grant select, insert on public.reviews to anon, authenticated;
+grant select (id, name, destination, rating, message, status, created_at)
+  on public.reviews to anon, authenticated;
+grant insert (name, destination, rating, message, status, email)
+  on public.reviews to anon, authenticated;

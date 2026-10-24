@@ -24,7 +24,7 @@ const isReviewWebhookPayload = (value: unknown): value is ReviewWebhookPayload =
   return payload.type === "INSERT"
     && payload.schema === "public"
     && payload.table === "reviews"
-    && review.status === "pending"
+    && review.status === "approved"
     && typeof review.name === "string"
     && review.name.trim().length > 0
     && review.name.length <= 60
@@ -92,19 +92,19 @@ Deno.serve(async (request) => {
   const destination = escapeHtml(review.destination);
   const name = escapeHtml(review.name);
   const message = escapeHtml(review.message).replace(/\r?\n/g, "<br>");
-  const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
+  const reviewerEmail = typeof review.email === "string" && review.email.trim() ? escapeHtml(review.email.trim()) : "";`n  const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
   const dashboardUrl = `https://supabase.com/dashboard/project/${encodeURIComponent(projectRef)}/editor`;
   const email = {
     from: sender,
     to: [recipient],
-    subject: "Nueva reseña pendiente de moderación",
+    subject: "Nueva reseña publicada en tu sitio",
     html: [
-      "<h2>Hay una nueva reseña pendiente de revisión</h2>",
+      "<h2>Se publicó una nueva reseña</h2>",
       `<p><strong>Nombre:</strong> ${name}</p>`,
-      `<p><strong>Destino:</strong> ${destination}</p>`,
+      `<p><strong>Destino:</strong> ${destination}</p>`,`n      reviewerEmail ? `<p><strong>Correo para responder:</strong> <a href="mailto:${reviewerEmail}">${reviewerEmail}</a></p>` : "<p><strong>Correo:</strong> no lo dejó</p>",
       `<p><strong>Valoración:</strong> ${stars} (${review.rating}/5)</p>`,
       `<p><strong>Reseña:</strong><br>${message}</p>`,
-      `<p>Revisa y modera la reseña en <a href="${dashboardUrl}">Supabase Table Editor</a>, tabla <code>reviews</code>.</p>`,
+      `<p>Si necesitas ocultarla, cambia su <code>status</code> a <code>rejected</code> en <a href="${dashboardUrl}">Supabase Table Editor</a>, tabla <code>reviews</code>.</p>`,
     ].join(""),
   };
 

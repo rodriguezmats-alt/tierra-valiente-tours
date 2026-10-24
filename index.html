@@ -1872,8 +1872,10 @@
               </select>
             </label>
             <label for="review-message">Tu experiencia<textarea id="review-message" name="review-message" rows="4" placeholder="Cuéntanos qué fue lo que más disfrutaste..." maxlength="500" required></textarea></label>
+            <label for="review-email">Tu correo (opcional)<input id="review-email" name="review-email" type="email" placeholder="tu@email.com" autocomplete="email" maxlength="120"></label>
+            <p class="review-note review-note--privacy">Tu correo es privado: no se muestra en la página. Lo usamos solo para responderte si compartes tu experiencia.</p>
             <button class="button button-primary" type="submit">Publicar experiencia <span aria-hidden="true">↗</span></button>
-            <p class="review-note">Revisaremos tu reseña antes de publicarla. Solo las reseñas aprobadas serán visibles para otros viajeros.</p>
+            <p class="review-note">Tu reseña se publicará de inmediato para que otros viajeros la vean.</p>
             <p class="review-status" id="review-status" role="status" aria-live="polite"></p>
           </form>
         </div>

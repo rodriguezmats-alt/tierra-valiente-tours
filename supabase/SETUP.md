@@ -1,6 +1,6 @@
 # Configurar reseñas compartidas
 
-Las reseñas se guardan en Supabase. Las personas visitantes pueden enviar reseñas, pero solo las aprobadas manualmente aparecen en la página.
+Las reseñas se guardan en Supabase. Las reseñas se publican de inmediato. Quien la escribe puede dejar un correo opcional; ese correo es privado (el público no puede leerlo) y solo tú lo ves en Supabase para poder responder.
 
 1. Abre el proyecto en [Supabase](https://supabase.com/).
 2. En **SQL Editor**, ejecuta el contenido actualizado de `schema.sql`. Si la tabla ya existía, las filas anteriores quedarán como `pending` y no se mostrarán hasta que las revises.
@@ -8,13 +8,13 @@ Las reseñas se guardan en Supabase. Las personas visitantes pueden enviar rese�
 4. Sustituye el valor de ejemplo `anonKey` en `supabase-config.js` por la clave pública de ese proyecto. La URL ya está rellenada con el proyecto configurado en este repositorio.
 5. Publica los archivos del sitio con conexión a internet; la página carga `supabase-js` desde jsDelivr.
 
-## Revisar y aprobar reseñas
+## Ocultar reseñas (moderación posterior)
 
 En **Table Editor → reviews**, revisa las filas con `status = pending`. Cambia `status` a `approved` para mostrarlas públicamente o a `rejected` para descartarlas. La política RLS impide que visitantes anónimos lean reseñas pendientes/rechazadas o cambien su estado.
 
 La clave `anon`/`publishable` está pensada para usarse en el navegador y se puede publicar. No coloques la clave `service_role` en este archivo. La seguridad de los permisos públicos depende de las políticas RLS de `schema.sql`.
 
-## Avisos por correo de reseñas pendientes
+## Avisos por correo de reseñas nuevas
 
 La función `functions/notify-pending-review/index.ts` envía un correo cuando una reseña nueva queda `pending`. No envía notificaciones al aprobar, rechazar o actualizar una reseña. El correo incluye el nombre, destino, valoración y texto de la reseña para facilitar la moderación.
 
@@ -56,6 +56,6 @@ En Supabase, abre **Database → Webhooks → Create a new webhook** y configúr
 - URL: `https://yvzhwqsgjmxjfmalkkeb.supabase.co/functions/v1/notify-pending-review`
 - Encabezados: `Content-type: application/json`; `x-webhook-secret` con el mismo valor guardado como `REVIEW_WEBHOOK_SECRET`; `Authorization` con `Bearer ` seguido por la clave anon heredada del proyecto; y `apikey` con esa misma clave anon. Nunca uses `service_role` ni una clave `sb_secret_`.
 
-Guarda el webhook y envía una reseña real para probar. Debe quedar pendiente y recibirse el correo; luego podrás aprobarla desde **Table Editor → reviews**. No envíes una reseña de prueba falsa al sitio público. Si no llega, revisa **Edge Functions → Logs** y el estado de la entrega en Resend.
+Guarda el webhook y envía una reseña real para probar. Debe aparecer publicada en la página y recibirse el correo; si hace falta ocultarla, cambia su status a ejected en **Table Editor → reviews**. No envíes una reseña de prueba falsa al sitio público. Si no llega, revisa **Edge Functions → Logs** y el estado de la entrega en Resend.
 
-El webhook no sustituye la moderación manual. Si Resend o la función fallan temporalmente, la reseña permanece guardada como pendiente; revisa periódicamente la tabla además del correo.
+Si Resend o la función fallan temporalmente, la reseña queda publicada igualmente; revisa periódicamente la tabla además del correo.

@@ -1374,7 +1374,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (!reviewsList.querySelector('.testimonial-card--review') && reviewEmptyNote) {
-        reviewEmptyNote.textContent = 'Todavía no hay reseñas publicadas. Si ya viajaste con nosotros, comparte tu experiencia; la revisaremos antes de publicarla.';
+        reviewEmptyNote.textContent = 'Todavía no hay reseñas publicadas. Si ya viajaste con nosotros, ¡sé la primera persona en compartir tu experiencia!';
       }
     } catch (error) {
       console.error('No se pudieron cargar las reseñas de Supabase:', error);
@@ -1393,8 +1393,11 @@ document.addEventListener('DOMContentLoaded', () => {
       name: String(formData.get('review-name') || '').trim(),
       destination: String(formData.get('review-destination') || '').trim(),
       rating: Number(formData.get('review-rating') || 0),
-      message: String(formData.get('review-message') || '').trim()
+      message: String(formData.get('review-message') || '').trim(),
+      status: 'approved'
     };
+    const email = String(formData.get('review-email') || '').trim();
+    if (email) review.email = email;
 
     if (
       !review.name
@@ -1406,8 +1409,9 @@ document.addEventListener('DOMContentLoaded', () => {
       || !Number.isInteger(review.rating)
       || review.rating < 1
       || review.rating > 5
+      || (email && (email.length > 120 || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)))
     ) {
-      setReviewStatus('Completa tu nombre, destino, valoración y experiencia para publicar la reseña.');
+      setReviewStatus('Completa tu nombre, destino, valoración y experiencia. Si dejas un correo, revisa que sea válido.');
       return;
     }
 
@@ -1431,7 +1435,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       reviewForm.reset();
-      setReviewStatus('¡Gracias! Recibimos tu reseña. La publicaremos cuando termine la revisión.');
+      setReviewStatus('¡Gracias! Tu reseña ya está publicada.');
+      reviewsList?.querySelectorAll('.testimonial-card--review').forEach((card) => card.remove());
+      await loadReviews();
+      setReviewStatus('¡Gracias! Tu reseña ya está publicada.');
     } catch (error) {
       console.error('No se pudo publicar la reseña en Supabase:', error);
       setReviewStatus('No pudimos publicar tu reseña. Inténtalo de nuevo más tarde.');
